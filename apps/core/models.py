@@ -44,7 +44,7 @@ class SiteConfiguration(models.Model):
     )
     community_email = models.EmailField(
         _("correo de la comunidad"),
-        default="contacto@sancipriano.co"
+        default=""
     )
     visitor_counter_base = models.PositiveIntegerField(
         _("contador base de visitantes"),
