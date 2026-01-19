@@ -199,7 +199,7 @@ WHATSAPP_COMMUNITY_NUMBER = config("WHATSAPP_COMMUNITY_NUMBER", default="+573160
 # Site Configuration
 SITE_NAME = "San Cipriano"
 SITE_TAGLINE = "Reserva Natural Comunitaria"
-COMMUNITY_EMAIL = config("COMMUNITY_EMAIL", default="contacto@sancipriano.co")
+COMMUNITY_EMAIL = config("COMMUNITY_EMAIL", default="")
 COMMUNITY_WHATSAPP = config("COMMUNITY_WHATSAPP", default="+573160592569")
 
 # Visitor Counter Initial Value
