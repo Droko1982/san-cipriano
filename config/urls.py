@@ -58,14 +58,15 @@ urlpatterns += i18n_patterns(
     prefix_default_language=False,
 )
 
-# Debug toolbar (development only)
+# Debug toolbar (development only, and only when enabled in INSTALLED_APPS)
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-    try:
-        import debug_toolbar
-        urlpatterns = [
-            path("__debug__/", include(debug_toolbar.urls)),
-        ] + urlpatterns
-    except ImportError:
-        pass
+    if "debug_toolbar" in settings.INSTALLED_APPS:
+        try:
+            import debug_toolbar
+            urlpatterns = [
+                path("__debug__/", include(debug_toolbar.urls)),
+            ] + urlpatterns
+        except ImportError:
+            pass
