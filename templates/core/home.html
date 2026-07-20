@@ -5,6 +5,11 @@
 
 {% block meta_description %}{% trans "San Cipriano: Reserva natural con ríos de agua cristalina, cascadas y las famosas brujitas. El mejor destino de ecoturismo en Colombia. Turismo comunitario en el Pacífico colombiano, cerca de Cali y Buenaventura." %}{% endblock %}
 
+{% block extra_head %}
+<!-- Preload hero image for faster LCP -->
+<link rel="preload" as="image" href="{% static 'images/gallery/rio-selva.jpg' %}" fetchpriority="high">
+{% endblock %}
+
 {% block content %}
 <!-- Hero Section -->
 <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
@@ -419,6 +424,71 @@
         </div>
     </div>
 </div>
+
+<!-- SEO Guide Section: answers the questions people actually search for -->
+<section class="py-16 px-4 bg-selva-50">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="inline-block text-5xl mb-4">🗺️</span>
+            <h2 class="font-display text-3xl font-bold text-selva-900 mb-2">
+                {% trans "Guía rápida para visitar San Cipriano" %}
+            </h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                {% trans "Todo lo que necesitas saber antes de conocer la reserva natural con los ríos más cristalinos de Colombia." %}
+            </p>
+        </div>
+
+        <div class="space-y-8">
+            <article class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-selva-100">
+                <h3 class="font-display text-2xl font-bold text-selva-900 mb-3">
+                    {% trans "¿Cómo llegar a San Cipriano desde Cali?" %}
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    {% trans "San Cipriano queda en el municipio de Buenaventura, Valle del Cauca, a unas 2 horas de Cali por la vía Cali–Buenaventura. Se llega hasta el corregimiento de Córdoba y desde allí se toma la brujita, el famoso transporte sobre rieles impulsado por motocicleta que te lleva por la selva hasta la reserva. Es una experiencia única en Colombia y parte esencial de la aventura." %}
+                </p>
+                <a href="{% url 'content:faq' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
+                    {% trans "Ver más detalles en las preguntas frecuentes" %} →
+                </a>
+            </article>
+
+            <article class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-selva-100">
+                <h3 class="font-display text-2xl font-bold text-selva-900 mb-3">
+                    {% trans "¿Cuánto cuesta visitar San Cipriano?" %}
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    {% trans "Hay planes para todos los presupuestos: pasadías desde $140.000 COP por persona y paquetes todo incluido con hospedaje comunitario, alimentación típica del Pacífico, paseo en brujita y tours guiados. Reservando directamente con la comunidad obtienes los precios oficiales, sin intermediarios, y ahorras hasta un 25%." %}
+                </p>
+                <a href="{% url 'visitors:services' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
+                    {% trans "Ver precios y paquetes completos" %} →
+                </a>
+            </article>
+
+            <article class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-selva-100">
+                <h3 class="font-display text-2xl font-bold text-selva-900 mb-3">
+                    {% trans "¿Qué hacer en San Cipriano?" %}
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    {% trans "Nadar en ríos de agua cristalina y charcos naturales, bajar el río en flotador (tubing), caminar senderos ecológicos hasta cascadas escondidas, avistar más de 200 especies de aves, descubrir ranas de colores del Chocó biogeográfico y disfrutar la gastronomía del Pacífico preparada por la comunidad. Todo acompañado por guías locales que conocen la selva como nadie." %}
+                </p>
+                <a href="{% url 'content:biodiversity' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
+                    {% trans "Explorar la biodiversidad de la reserva" %} →
+                </a>
+            </article>
+
+            <article class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-selva-100">
+                <h3 class="font-display text-2xl font-bold text-selva-900 mb-3">
+                    {% trans "Una comunidad heredera de los palenques" %}
+                </h3>
+                <p class="text-gray-700 leading-relaxed">
+                    {% trans "San Cipriano es una comunidad afrodescendiente del Pacífico colombiano, heredera de la tradición de los palenques: asentamientos libres fundados en la selva por africanos que escaparon de la esclavitud. Hoy esa misma comunidad protege la reserva natural y gestiona el turismo. Cada visita apoya directamente a las familias locales y a la conservación del bosque húmedo tropical." %}
+                </p>
+                <a href="{% url 'content:about' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
+                    {% trans "Conocer nuestra historia y cultura" %} →
+                </a>
+            </article>
+        </div>
+    </div>
+</section>
 
 <!-- CTA Section -->
 <section class="py-20 px-4 bg-gradient-to-br from-selva-800 to-rio-900 text-white">

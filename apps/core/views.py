@@ -82,21 +82,20 @@ class RobotsTxtView(View):
         sitemap_url = f"{protocol}://{host}/sitemap.xml"
 
         content = f"""# robots.txt for San Cipriano - Community Tourism Website
-# https://sancipriano.pythonanywhere.com
+# https://sanciprianoreserva.com
 
 User-agent: *
 Allow: /
 
-# Disallow admin and API paths
+# Disallow admin, API and thank-you paths
 Disallow: /admin/
 Disallow: /api/
 Disallow: /__debug__/
+Disallow: /visitantes/gracias/
+Disallow: /*/visitantes/gracias/
 
 # Sitemap location
 Sitemap: {sitemap_url}
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
 """
         return HttpResponse(content, content_type="text/plain")
 
@@ -139,23 +138,26 @@ class SitemapView(View):
         base_url = f"{protocol}://{host}"
         today = date.today().isoformat()
 
-        # Define all pages with their priorities and change frequencies
+        # Define all pages with their priorities and change frequencies.
+        # URLs must match the real routes in apps/*/urls.py (Spanish/default,
+        # served without language prefix because prefix_default_language=False).
         pages = [
             {"url": "/", "priority": "1.0", "changefreq": "weekly", "lastmod": today},
-            {"url": "/contenido/sobre-nosotros/", "priority": "0.9", "changefreq": "monthly", "lastmod": today},
+            {"url": "/contenido/sobre/", "priority": "0.9", "changefreq": "monthly", "lastmod": today},
             {"url": "/visitantes/servicios/", "priority": "0.9", "changefreq": "weekly", "lastmod": today},
             {"url": "/contenido/biodiversidad/", "priority": "0.8", "changefreq": "monthly", "lastmod": today},
             {"url": "/proteccion/", "priority": "0.8", "changefreq": "monthly", "lastmod": today},
             {"url": "/seguridad/", "priority": "0.8", "changefreq": "monthly", "lastmod": today},
-            {"url": "/visitantes/consulta/", "priority": "0.9", "changefreq": "monthly", "lastmod": today},
-            {"url": "/contenido/preguntas-frecuentes/", "priority": "0.7", "changefreq": "monthly", "lastmod": today},
-            {"url": "/visitantes/contacto/", "priority": "0.7", "changefreq": "monthly", "lastmod": today},
+            {"url": "/visitantes/planifica/", "priority": "0.9", "changefreq": "monthly", "lastmod": today},
+            {"url": "/contenido/preguntas/", "priority": "0.7", "changefreq": "monthly", "lastmod": today},
+            {"url": "/contenido/contacto/", "priority": "0.7", "changefreq": "monthly", "lastmod": today},
             {"url": "/terminos/", "priority": "0.5", "changefreq": "yearly", "lastmod": "2026-01-01"},
             {"url": "/privacidad/", "priority": "0.5", "changefreq": "yearly", "lastmod": "2026-01-01"},
             {"url": "/cookies/", "priority": "0.3", "changefreq": "yearly", "lastmod": "2026-01-01"},
         ]
 
-        # Supported languages for hreflang
+        # Supported languages for hreflang. Spanish (default) has no URL
+        # prefix; the rest are served under /<lang>/.
         languages = ["es", "en", "fr", "de", "it", "pt"]
 
         # Build XML with xhtml namespace for hreflang
@@ -170,7 +172,11 @@ class SitemapView(View):
             xml_content += f"    <priority>{page['priority']}</priority>\n"
             # Add hreflang alternates for each page
             for lang in languages:
-                xml_content += f'    <xhtml:link rel="alternate" hreflang="{lang}" href="{base_url}/{lang}{page["url"]}"/>\n'
+                if lang == "es":
+                    lang_url = f"{base_url}{page['url']}"
+                else:
+                    lang_url = f"{base_url}/{lang}{page['url']}"
+                xml_content += f'    <xhtml:link rel="alternate" hreflang="{lang}" href="{lang_url}"/>\n'
             xml_content += f'    <xhtml:link rel="alternate" hreflang="x-default" href="{base_url}{page["url"]}"/>\n'
             xml_content += "  </url>\n"
 

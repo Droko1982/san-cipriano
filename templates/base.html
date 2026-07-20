@@ -4,27 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Apply saved theme before first paint to avoid flash
+        (function() {
+            try {
+                var t = localStorage.getItem('theme');
+                if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                    document.documentElement.classList.add('dark');
+                }
+            } catch (e) {}
+        })();
+    </script>
     <meta name="description" content="{% block meta_description %}San Cipriano - Reserva natural comunitaria en Colombia. Turismo responsable y conservación ambiental.{% endblock %}">
-    <meta name="keywords" content="San Cipriano, reserva natural Colombia, ecoturismo Colombia, turismo Colombia, cascadas Colombia, ríos cristalinos Colombia, agua cristalina Colombia, naturaleza Colombia, selva tropical Colombia, Pacífico colombiano, Valle del Cauca turismo, Buenaventura turismo, brujitas San Cipriano, turismo comunitario Colombia, biodiversidad Colombia, avistamiento de aves Colombia, senderismo Colombia, hospedaje ecológico Colombia, vacaciones naturaleza Colombia, destinos ecológicos Colombia, lugares para visitar en Colombia, mejores cascadas Colombia, ríos más limpios Colombia, paraíso natural Colombia, turismo sostenible Colombia, comunidad afrodescendiente Colombia, cultura palenquera, ecoturismo Pacífico, aventura Colombia, tubing Colombia, charcos naturales Colombia, piscinas naturales Colombia, excursiones desde Cali, que hacer en Buenaventura, lugares cerca de Cali, weekend getaway Colombia, nature tourism Colombia, Colombia waterfalls, crystal clear rivers Colombia, ecotourism South America, best nature destinations Colombia, off the beaten path Colombia, hidden gems Colombia, sustainable tourism Colombia, community tourism Colombia, Chocó biogeográfico, planes desde Cali, paseos cerca de Cali, fincas cerca de Cali, ríos cerca de Cali, balnearios naturales Colombia, turismo rural Colombia, viajes económicos Colombia, planes fin de semana Colombia, plan todo incluido San Cipriano, paquetes turísticos Valle del Cauca, destinos baratos Colombia, vacaciones familiares Colombia, luna de miel naturaleza Colombia, qué hacer cerca de Buenaventura, playas y ríos Colombia, Colombia eco travel, Colombia nature vacation, things to do near Cali Colombia, best rivers in Colombia, Colombia jungle tour, Colombia adventure travel, unique experiences Colombia, Colombia travel guide 2026, donde ir en Colombia, mejores destinos Colombia 2026, turismo de naturaleza Colombia, Colombia biodiversity tourism, rainforest Colombia tour, San Cipriano how to get there, San Cipriano tours, San Cipriano prices">
+    <meta name="keywords" content="San Cipriano, San Cipriano Colombia, San Cipriano Buenaventura, reserva natural San Cipriano, brujitas San Cipriano, cómo llegar a San Cipriano, San Cipriano precios, San Cipriano tours, ríos cristalinos Colombia, cascadas Colombia, ecoturismo Colombia, turismo comunitario Colombia, planes desde Cali, paseos cerca de Cali, ríos cerca de Cali, Valle del Cauca turismo, Buenaventura turismo, Pacífico colombiano, Chocó biogeográfico, comunidad afrodescendiente, palenque, cultura palenquera, avistamiento de aves Colombia, tubing Colombia, piscinas naturales Colombia, charcos naturales Colombia, hospedaje San Cipriano, plan todo incluido San Cipriano, crystal clear rivers Colombia, Colombia ecotourism, things to do near Cali Colombia, Colombia waterfalls, San Cipriano nature reserve">
     <meta name="author" content="Comunidad de San Cipriano">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#14532d">
 
     <!-- Geo-targeting for Colombia and worldwide -->
     <meta name="geo.region" content="CO-VAC">
     <meta name="geo.placename" content="San Cipriano, Buenaventura, Valle del Cauca, Colombia">
     <meta name="geo.position" content="3.8167;-76.8833">
     <meta name="ICBM" content="3.8167, -76.8833">
-    <meta name="language" content="Spanish, English, French, German, Italian, Portuguese">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="global">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="3 days">
 
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="LhpzHxCZ57kayF8CsUpHZkBzrIEP-LxzGhu7FZ5Vajo" />
 
     <!-- Bing Webmaster Tools Verification -->
     <meta name="msvalidate.01" content="302923EC95C786683432ED786D51C3FF" />
+
+    <!-- Resource hints -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
 
     <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FF0LX57FWQ"></script>
@@ -37,10 +48,14 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:site_name" content="San Cipriano - Reserva Natural Comunitaria">
+    <meta property="og:url" content="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
     <meta property="og:title" content="{% block og_title %}{{ site_name }} - {{ site_tagline }}{% endblock %}">
     <meta property="og:description" content="{% block og_description %}Reserva natural comunitaria en el Pacífico colombiano. Turismo responsable, biodiversidad única y las famosas brujitas.{% endblock %}">
-    <meta property="og:image" content="{% block og_image %}{% static 'images/gallery/rio-cristalino.jpg' %}{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}{{ request.scheme }}://{{ request.get_host }}{% static 'images/gallery/rio-selva.jpg' %}{% endblock %}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    <meta property="og:image:alt" content="{% trans 'Río de agua cristalina en la selva de San Cipriano, Colombia' %}">
     <meta property="og:locale" content="{{ LANGUAGE_CODE }}">
     <meta property="og:locale:alternate" content="es">
     <meta property="og:locale:alternate" content="en">
@@ -53,21 +68,50 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ site_name }} - {{ site_tagline }}">
     <meta name="twitter:description" content="Reserva natural comunitaria en el Pacífico colombiano. Turismo responsable y las famosas brujitas.">
+    <meta name="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'images/gallery/rio-selva.jpg' %}">
+    <meta name="twitter:image:alt" content="{% trans 'Río de agua cristalina en la selva de San Cipriano, Colombia' %}">
 
-    <!-- Schema.org WebSite - Enables Google Sitelinks Search Box -->
+    <!-- Schema.org WebSite -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": "{{ request.scheme }}://{{ request.get_host }}/#website",
         "name": "San Cipriano - Reserva Natural Comunitaria",
         "alternateName": ["San Cipriano Reserva", "Reserva Natural San Cipriano", "San Cipriano Colombia"],
         "url": "{{ request.scheme }}://{{ request.get_host }}/",
         "inLanguage": ["es", "en", "fr", "de", "it", "pt"],
         "description": "Sitio web oficial de la Reserva Natural Comunitaria de San Cipriano, Colombia. Ecoturismo, ríos cristalinos, cascadas y las famosas brujitas.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Comunidad de San Cipriano"
-        }
+        "publisher": {"@id": "{{ request.scheme }}://{{ request.get_host }}/#organization"}
+    }
+    </script>
+
+    <!-- Schema.org Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "{{ request.scheme }}://{{ request.get_host }}/#organization",
+        "name": "Comunidad de San Cipriano",
+        "url": "{{ request.scheme }}://{{ request.get_host }}/",
+        "logo": "{{ request.scheme }}://{{ request.get_host }}{% static 'images/favicon.svg' %}",
+        "description": "Consejo comunitario afrodescendiente que gestiona el turismo responsable en la Reserva Natural de San Cipriano, Colombia.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Cipriano",
+            "addressRegion": "Valle del Cauca",
+            "addressCountry": "CO"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "{{ community_whatsapp|default:'+573188383917' }}",
+            "contactType": "reservations",
+            "availableLanguage": ["Spanish", "English"]
+        },
+        "sameAs": [
+            "https://www.instagram.com/sanciprianoreserva",
+            "https://www.facebook.com/sanciprianoreserva"
+        ]
     }
     </script>
 
@@ -87,59 +131,33 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "{% block breadcrumb_name %}San Cipriano{% endblock %}",
-                "item": "{{ request.build_absolute_uri }}"
+                "item": "{{ request.scheme }}://{{ request.get_host }}{{ request.path }}"
             }
         ]
     }
     </script>
 
-    <!-- Schema.org for Google - TouristAttraction -->
+    <!-- Schema.org TouristAttraction + TouristDestination + LocalBusiness (consolidated) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "TouristAttraction",
-        "name": "San Cipriano",
-        "alternateName": ["Reserva Natural San Cipriano", "San Cipriano Nature Reserve"],
-        "description": "Reserva natural comunitaria en el Pacífico colombiano con ríos cristalinos, biodiversidad única y las famosas brujitas. Uno de los mejores destinos de ecoturismo en Colombia.",
+        "@type": ["TouristAttraction", "TouristDestination", "LocalBusiness"],
+        "@id": "{{ request.scheme }}://{{ request.get_host }}/#attraction",
+        "name": "San Cipriano - Reserva Natural Comunitaria",
+        "alternateName": ["Reserva Natural San Cipriano", "San Cipriano Nature Reserve", "San Cipriano Buenaventura"],
+        "description": "Reserva natural comunitaria en el Pacífico colombiano con ríos de agua cristalina, cascadas, selva tropical del Chocó biogeográfico y las famosas brujitas. Turismo comunitario gestionado por una comunidad afrodescendiente heredera de los palenques. Uno de los mejores destinos de ecoturismo en Colombia, cerca de Cali y Buenaventura.",
         "url": "{{ request.scheme }}://{{ request.get_host }}/",
         "image": [
-            "{% static 'images/gallery/rio-cristalino.jpg' %}",
-            "{% static 'images/gallery/cascada.jpg' %}",
-            "{% static 'images/gallery/rio-selva.jpg' %}"
+            "{{ request.scheme }}://{{ request.get_host }}{% static 'images/gallery/rio-selva.jpg' %}",
+            "{{ request.scheme }}://{{ request.get_host }}{% static 'images/gallery/cascada.jpg' %}",
+            "{{ request.scheme }}://{{ request.get_host }}{% static 'images/gallery/rio-cristalino.jpg' %}"
         ],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "San Cipriano",
-            "addressRegion": "Valle del Cauca",
-            "addressCountry": "CO"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "3.8167",
-            "longitude": "-76.8833"
-        },
-        "touristType": ["Eco-tourists", "Nature lovers", "Bird watchers", "Adventure seekers", "Families", "Backpackers"],
-        "publicAccess": true,
-        "isAccessibleForFree": false,
-        "availableLanguage": ["Spanish", "English", "French", "German", "Italian", "Portuguese"]
-    }
-    </script>
-
-    <!-- Schema.org LocalBusiness for local SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "{{ site_name|default:'San Cipriano' }}",
-        "description": "Turismo comunitario responsable en la reserva natural de San Cipriano, Valle del Cauca, Colombia.",
-        "url": "{{ request.scheme }}://{{ request.get_host }}/",
         "telephone": "{{ community_whatsapp|default:'+573188383917' }}",
         "email": "{{ community_email|default:'info@sanciprianoreserva.com' }}",
-        "image": "{% static 'images/gallery/rio-cristalino.jpg' %}",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Reserva Natural San Cipriano",
-            "addressLocality": "San Cipriano",
+            "addressLocality": "Buenaventura",
             "addressRegion": "Valle del Cauca",
             "postalCode": "764001",
             "addressCountry": "CO"
@@ -149,19 +167,47 @@
             "latitude": "3.8167",
             "longitude": "-76.8833"
         },
-        "priceRange": "$$ - $$$",
+        "hasMap": "https://www.google.com/maps?q=3.8167,-76.8833",
         "openingHours": "Mo-Su 06:00-18:00",
+        "priceRange": "$$ - $$$",
         "paymentAccepted": ["Cash", "Bank Transfer"],
         "currenciesAccepted": "COP",
-        "areaServed": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": "3.8167",
-                "longitude": "-76.8833"
+        "publicAccess": true,
+        "isAccessibleForFree": false,
+        "smokingAllowed": false,
+        "availableLanguage": ["Spanish", "English", "French", "German", "Italian", "Portuguese"],
+        "touristType": ["Eco-tourists", "Nature lovers", "Bird watchers", "Adventure seekers", "Photographers", "Families", "Backpackers", "Cultural tourists"],
+        "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Ríos cristalinos", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Cascadas naturales", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Senderos ecológicos", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Transporte en brujitas", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Hospedaje comunitario", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Restaurantes locales", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Guías turísticos", "value": true}
+        ],
+        "includesAttraction": [
+            {
+                "@type": "TouristAttraction",
+                "name": "Ríos Cristalinos",
+                "description": "Ríos de agua transparente perfectos para nadar y hacer tubing"
             },
-            "geoRadius": "50000"
-        },
+            {
+                "@type": "TouristAttraction",
+                "name": "Las Brujitas",
+                "description": "Transporte único sobre rieles impulsado por motocicleta"
+            },
+            {
+                "@type": "TouristAttraction",
+                "name": "Cascadas Naturales",
+                "description": "Múltiples cascadas en medio de la selva tropical"
+            },
+            {
+                "@type": "TouristAttraction",
+                "name": "Selva Tropical",
+                "description": "Bosque húmedo tropical del Chocó biogeográfico con biodiversidad única"
+            }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Servicios Turísticos",
@@ -187,161 +233,28 @@
         "sameAs": [
             "https://www.instagram.com/sanciprianoreserva",
             "https://www.facebook.com/sanciprianoreserva"
-        ]
-    }
-    </script>
-
-    <!-- Schema.org Organization -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Comunidad de San Cipriano",
-        "url": "{{ request.scheme }}://{{ request.get_host }}/",
-        "logo": "{% static 'images/favicon.svg' %}",
-        "description": "Comunidad local que gestiona el turismo responsable en la Reserva Natural de San Cipriano, Colombia.",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "San Cipriano",
-            "addressRegion": "Valle del Cauca",
-            "addressCountry": "CO"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "{{ community_whatsapp|default:'+573188383917' }}",
-            "contactType": "reservations",
-            "availableLanguage": ["Spanish", "English"]
-        }
-    }
-    </script>
-
-    <!-- Schema.org NaturalFeature for Rivers and Waterfalls -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "NaturalFeature",
-        "name": "Ríos Cristalinos de San Cipriano",
-        "description": "Ríos de agua cristalina en la selva del Pacífico colombiano, considerados entre los más limpios de Colombia. Ideales para nadar, tubing y observar la naturaleza.",
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "3.8167",
-            "longitude": "-76.8833"
-        },
-        "containedInPlace": {
-            "@type": "Place",
-            "name": "Reserva Natural San Cipriano",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "San Cipriano",
-                "addressRegion": "Valle del Cauca",
-                "addressCountry": "Colombia"
-            }
-        }
-    }
-    </script>
-
-    <!-- Schema.org Place for better geographic SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Place",
-        "name": "San Cipriano - Reserva Natural",
-        "description": "Reserva natural comunitaria con cascadas, ríos cristalinos y biodiversidad única en el Pacífico colombiano. Hogar de las famosas brujitas.",
-        "url": "{{ request.scheme }}://{{ request.get_host }}/",
-        "telephone": "+573188383917",
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "3.8167",
-            "longitude": "-76.8833"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Reserva Natural San Cipriano",
-            "addressLocality": "Buenaventura",
-            "addressRegion": "Valle del Cauca",
-            "postalCode": "764001",
-            "addressCountry": "CO"
-        },
-        "hasMap": "https://www.google.com/maps?q=3.8167,-76.8833",
-        "isAccessibleForFree": false,
-        "maximumAttendeeCapacity": 500,
-        "publicAccess": true,
-        "smokingAllowed": false,
-        "amenityFeature": [
-            {"@type": "LocationFeatureSpecification", "name": "Ríos cristalinos", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Cascadas naturales", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Senderos ecológicos", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Transporte en brujitas", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Hospedaje comunitario", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Restaurantes locales", "value": true},
-            {"@type": "LocationFeatureSpecification", "name": "Guías turísticos", "value": true}
         ],
-        "keywords": "cascadas Colombia, ríos cristalinos, agua cristalina, naturaleza Colombia, ecoturismo, reserva natural, brujitas, Pacífico colombiano, turismo comunitario"
+        "keywords": "San Cipriano, cascadas Colombia, ríos cristalinos, ecoturismo, reserva natural, brujitas, Pacífico colombiano, turismo comunitario, palenque, Chocó biogeográfico"
     }
     </script>
 
-    <!-- Schema.org for Travel/Tourism specific -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "TouristDestination",
-        "name": "San Cipriano",
-        "description": "Destino ecoturístico único en Colombia con ríos de agua cristalina, cascadas naturales, y las famosas brujitas. Turismo comunitario en el Pacífico colombiano.",
-        "url": "{{ request.scheme }}://{{ request.get_host }}/",
-        "touristType": [
-            "Eco-tourists",
-            "Nature lovers",
-            "Adventure seekers",
-            "Bird watchers",
-            "Photographers",
-            "Families",
-            "Backpackers",
-            "Cultural tourists"
-        ],
-        "includesAttraction": [
-            {
-                "@type": "TouristAttraction",
-                "name": "Ríos Cristalinos",
-                "description": "Ríos de agua transparente perfectos para nadar y hacer tubing"
-            },
-            {
-                "@type": "TouristAttraction",
-                "name": "Las Brujitas",
-                "description": "Transporte único sobre rieles impulsado por motocicleta"
-            },
-            {
-                "@type": "TouristAttraction",
-                "name": "Cascadas Naturales",
-                "description": "Múltiples cascadas en medio de la selva tropical"
-            },
-            {
-                "@type": "TouristAttraction",
-                "name": "Selva Tropical",
-                "description": "Bosque húmedo tropical con biodiversidad única"
-            }
-        ]
-    }
-    </script>
-
-    <title>{% block title %}{{ site_name }}{% endblock %} | {{ site_tagline }}</title>
+    <title>{% block title %}{{ site_tagline }}{% endblock %} | San Cipriano Colombia</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="{% static 'images/favicon.svg' %}">
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    <link rel="canonical" href="{{ request.scheme }}://{{ request.get_host }}{{ request.path }}">
 
-    <!-- Alternate languages for international SEO -->
-    <link rel="alternate" hreflang="es" href="{{ request.scheme }}://{{ request.get_host }}{% url 'core:home' %}?lang=es">
-    <link rel="alternate" hreflang="en" href="{{ request.scheme }}://{{ request.get_host }}{% url 'core:home' %}?lang=en">
-    <link rel="alternate" hreflang="fr" href="{{ request.scheme }}://{{ request.get_host }}{% url 'core:home' %}?lang=fr">
-    <link rel="alternate" hreflang="de" href="{{ request.scheme }}://{{ request.get_host }}{% url 'core:home' %}?lang=de">
-    <link rel="alternate" hreflang="it" href="{{ request.scheme }}://{{ request.get_host }}{% url 'core:home' %}?lang=it">
-    <link rel="alternate" hreflang="pt" href="{{ request.scheme }}://{{ request.get_host }}{% url 'core:home' %}?lang=pt">
-    <link rel="alternate" hreflang="x-default" href="{{ request.scheme }}://{{ request.get_host }}{% url 'core:home' %}">
+    <!-- Alternate languages for international SEO (per-page URLs) -->
+    {% for lang in languages_with_urls %}
+    <link rel="alternate" hreflang="{{ lang.code }}" href="{{ request.scheme }}://{{ request.get_host }}{{ lang.url }}">
+    {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="{{ request.scheme }}://{{ request.get_host }}{{ languages_with_urls.0.url }}">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
                     colors: {
@@ -402,6 +315,53 @@
         .text-shadow {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+
+        /* ===== Dark mode overrides (class strategy, works with all existing utilities) ===== */
+        .theme-icon-sun { display: none; }
+        html.dark .theme-icon-sun { display: block; }
+        html.dark .theme-icon-moon { display: none; }
+
+        html.dark body { background-color: #0b1220; color: #e2e8f0; }
+        html.dark .bg-white { background-color: #1e293b !important; }
+        html.dark .bg-white\/95 { background-color: rgba(30, 41, 59, 0.95) !important; }
+        html.dark .bg-selva-50,
+        html.dark .bg-rio-50,
+        html.dark .bg-tierra-50,
+        html.dark .bg-blue-50,
+        html.dark .bg-gray-50 { background-color: #111c2e !important; }
+        html.dark .bg-amber-50 { background-color: #241a0e !important; }
+        html.dark .bg-selva-100 { background-color: #14532d !important; }
+        html.dark .bg-rio-100 { background-color: #0c4a6e !important; }
+        html.dark .bg-tierra-100 { background-color: #5c3e2c !important; }
+        html.dark .bg-amber-100 { background-color: #78350f !important; }
+        html.dark .hover\:bg-gray-50:hover,
+        html.dark .hover\:bg-selva-50:hover { background-color: #273449 !important; }
+        html.dark .text-gray-900,
+        html.dark .text-gray-800 { color: #f1f5f9 !important; }
+        html.dark .text-gray-700 { color: #cbd5e1 !important; }
+        html.dark .text-gray-600 { color: #94a3b8 !important; }
+        html.dark .text-gray-500 { color: #8b9bb0 !important; }
+        html.dark .text-selva-900 { color: #bbf7d0 !important; }
+        html.dark .text-selva-800 { color: #a7f3d0 !important; }
+        html.dark .text-selva-700 { color: #86efac !important; }
+        html.dark .text-selva-600 { color: #4ade80 !important; }
+        html.dark .text-rio-900 { color: #bae6fd !important; }
+        html.dark .text-rio-700 { color: #7dd3fc !important; }
+        html.dark .text-tierra-900 { color: #e6d5c3 !important; }
+        html.dark .text-tierra-700 { color: #d4b896 !important; }
+        html.dark .text-amber-900 { color: #fde68a !important; }
+        html.dark .text-amber-700 { color: #fcd34d !important; }
+        html.dark .text-blue-900 { color: #bfdbfe !important; }
+        html.dark .text-blue-700 { color: #93c5fd !important; }
+        html.dark .border-gray-100,
+        html.dark .border-gray-200,
+        html.dark .border-selva-100,
+        html.dark .border-selva-200,
+        html.dark .border-rio-100,
+        html.dark .border-tierra-100,
+        html.dark .border-tierra-200,
+        html.dark .border-amber-200 { border-color: #334155 !important; }
+        html.dark .border-y { border-color: #334155; }
     </style>
 
     {% block extra_head %}{% endblock %}
@@ -445,6 +405,16 @@
                     <a href="{% url 'visitors:inquiry_form' %}" class="ml-3 px-4 py-1.5 text-sm bg-rio-500 hover:bg-rio-600 rounded-md font-medium transition-colors whitespace-nowrap">
                         {% trans "Planifica tu Visita" %}
                     </a>
+
+                    <!-- Theme Toggle -->
+                    <button type="button" class="theme-toggle-btn ml-1 p-2 rounded-md hover:bg-selva-800 transition-colors border border-selva-700" aria-label="{% trans 'Cambiar tema claro/oscuro' %}">
+                        <svg class="w-3.5 h-3.5 theme-icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                        <svg class="w-3.5 h-3.5 theme-icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </button>
 
                     <!-- Language Selector -->
                     <div class="relative ml-1">
@@ -503,6 +473,17 @@
                 <a href="{% url 'visitors:inquiry_form' %}" class="block px-4 py-3 bg-rio-500 hover:bg-rio-600 rounded-lg font-medium text-center transition-colors">
                     {% trans "Planifica tu Visita" %}
                 </a>
+
+                <!-- Mobile Theme Toggle -->
+                <button type="button" class="theme-toggle-btn mt-4 w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-selva-800 hover:bg-selva-700 transition-colors" aria-label="{% trans 'Cambiar tema claro/oscuro' %}">
+                    <svg class="w-4 h-4 theme-icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                    </svg>
+                    <svg class="w-4 h-4 theme-icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                    </svg>
+                    <span class="text-sm">{% trans "Modo oscuro / claro" %}</span>
+                </button>
 
                 <!-- Mobile Language Selector -->
                 <div class="mt-4 pt-4 border-t border-selva-800 flex flex-wrap gap-2">
@@ -622,6 +603,14 @@
 
     <!-- JavaScript -->
     <script>
+        // Theme (dark/light) toggle
+        document.querySelectorAll('.theme-toggle-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var isDark = document.documentElement.classList.toggle('dark');
+                try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+            });
+        });
+
         // Mobile menu toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             document.getElementById('mobile-menu').classList.toggle('hidden');

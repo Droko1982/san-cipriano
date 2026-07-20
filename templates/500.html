@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{# Standalone template: Django renders 500 errors WITHOUT context processors, so no base.html here #}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Error temporal | San Cipriano Colombia</title>
+    <style>
+        body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #f0fdf4; color: #1f2937;
+               min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; }
+        .box { max-width: 28rem; padding: 2rem; }
+        h1 { font-family: Georgia, serif; color: #14532d; }
+        .wa { display: inline-block; margin-top: 1rem; padding: 1rem 2rem; background: #22c55e; color: #fff;
+              text-decoration: none; font-weight: 600; border-radius: 0.75rem; }
+        .wa:hover { background: #16a34a; }
+        .muted { color: #6b7280; font-size: 0.9rem; margin-top: 1rem; }
+        a { color: #15803d; }
+        @media (prefers-color-scheme: dark) {
+            body { background: #0b1220; color: #e2e8f0; }
+            h1 { color: #bbf7d0; }
+            .muted { color: #94a3b8; }
+            a { color: #86efac; }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div style="font-size:4rem;">🌿</div>
+        <h1>Algo salió mal, pero seguimos aquí</h1>
+        <p>Tuvimos un error temporal en el sitio. Mientras lo arreglamos, escríbenos directamente y con gusto te ayudamos a planificar tu visita a San Cipriano.</p>
+        <a class="wa" href="https://wa.me/573188383917?text=Hola!%20Necesito%20informaci%C3%B3n%20sobre%20San%20Cipriano" target="_blank" rel="noopener">💬 WhatsApp: +57 318 838 3917</a>
+        <p class="muted">También puedes volver a la <a href="/">página de inicio</a> o intentarlo de nuevo en unos minutos.</p>
+    </div>
+</body>
+</html>
