@@ -69,6 +69,46 @@
                 "@type": "Answer",
                 "text": "{% trans 'Las brujitas son pequeños carros sobre rieles impulsados por motocicletas. Son el transporte tradicional para llegar a San Cipriano y una experiencia única en sí misma.' %}"
             }
+        },
+        {
+            "@type": "Question",
+            "name": "{% trans '¿Cuál es la mejor época para visitar San Cipriano?' %}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{% trans 'San Cipriano se puede visitar todo el año gracias a su clima cálido y húmedo tropical. En temporada seca los senderos están más despejados y en temporada de lluvias los ríos y cascadas llevan más agua. Los fines de semana y festivos son los días más concurridos, así que si prefieres tranquilidad, visita entre semana.' %}"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "{% trans '¿Cuántos días se recomienda quedarse en San Cipriano?' %}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{% trans 'Puedes disfrutar San Cipriano en un pasadía, pero recomendamos quedarte al menos una noche para vivir la experiencia completa: los ríos sin multitudes, el amanecer en la selva y la gastronomía del Pacífico. El hospedaje comunitario permite quedarse uno o dos días con toda comodidad.' %}"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "{% trans '¿Es seguro visitar San Cipriano?' %}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{% trans 'Sí. San Cipriano es un destino gestionado por la comunidad local, con guías capacitados y normas de seguridad para las actividades en el río. Como en cualquier viaje, recomendamos seguir las indicaciones de los guías, usar chaleco salvavidas en el agua y cuidar tus pertenencias.' %}"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "{% trans '¿Dónde comer y dormir en San Cipriano?' %}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{% trans 'La comunidad ofrece restaurantes con comida típica del Pacífico —pescado fresco, arroz con coco y patacón— y hospedajes comunitarios sencillos y acogedores. Reservando directamente con nosotros aseguras tu cupo, especialmente en temporada alta.' %}"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "{% trans '¿Necesito llevar efectivo?' %}",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{% trans 'Sí, recomendamos llevar suficiente efectivo. En San Cipriano la señal es limitada y no siempre hay datáfono ni cajeros, así que el efectivo es la forma más segura de pagar la entrada, el paseo en brujita, la comida y el hospedaje.' %}"
+            }
         }
     ]
 }
@@ -193,6 +233,66 @@
                 </summary>
                 <div class="px-6 pb-4">
                     <p class="text-gray-600">{% trans "Las brujitas son pequeños carros sobre rieles impulsados por motocicletas. Son el transporte tradicional para llegar a San Cipriano y una experiencia única en sí misma." %}</p>
+                </div>
+            </details>
+
+            <details class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group">
+                <summary class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-gray-900">{% trans "¿Cuál es la mejor época para visitar San Cipriano?" %}</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="px-6 pb-4">
+                    <p class="text-gray-600">{% trans "San Cipriano se puede visitar todo el año gracias a su clima cálido y húmedo tropical. En temporada seca los senderos están más despejados y en temporada de lluvias los ríos y cascadas llevan más agua. Los fines de semana y festivos son los días más concurridos, así que si prefieres tranquilidad, visita entre semana." %}</p>
+                </div>
+            </details>
+
+            <details class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group">
+                <summary class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-gray-900">{% trans "¿Cuántos días se recomienda quedarse en San Cipriano?" %}</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="px-6 pb-4">
+                    <p class="text-gray-600">{% trans "Puedes disfrutar San Cipriano en un pasadía, pero recomendamos quedarte al menos una noche para vivir la experiencia completa: los ríos sin multitudes, el amanecer en la selva y la gastronomía del Pacífico. El hospedaje comunitario permite quedarse uno o dos días con toda comodidad." %}</p>
+                </div>
+            </details>
+
+            <details class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group">
+                <summary class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-gray-900">{% trans "¿Es seguro visitar San Cipriano?" %}</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="px-6 pb-4">
+                    <p class="text-gray-600">{% trans "Sí. San Cipriano es un destino gestionado por la comunidad local, con guías capacitados y normas de seguridad para las actividades en el río. Como en cualquier viaje, recomendamos seguir las indicaciones de los guías, usar chaleco salvavidas en el agua y cuidar tus pertenencias." %}</p>
+                </div>
+            </details>
+
+            <details class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group">
+                <summary class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-gray-900">{% trans "¿Dónde comer y dormir en San Cipriano?" %}</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="px-6 pb-4">
+                    <p class="text-gray-600">{% trans "La comunidad ofrece restaurantes con comida típica del Pacífico —pescado fresco, arroz con coco y patacón— y hospedajes comunitarios sencillos y acogedores. Reservando directamente con nosotros aseguras tu cupo, especialmente en temporada alta." %}</p>
+                </div>
+            </details>
+
+            <details class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group">
+                <summary class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <span class="font-semibold text-gray-900">{% trans "¿Necesito llevar efectivo?" %}</span>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="px-6 pb-4">
+                    <p class="text-gray-600">{% trans "Sí, recomendamos llevar suficiente efectivo. En San Cipriano la señal es limitada y no siempre hay datáfono ni cajeros, así que el efectivo es la forma más segura de pagar la entrada, el paseo en brujita, la comida y el hospedaje." %}</p>
                 </div>
             </details>
         {% endif %}
