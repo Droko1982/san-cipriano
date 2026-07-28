@@ -1821,3 +1821,18 @@ msgstr ""
 " è limitato e non sempre sono disponibili POS o bancomat, quindi i contanti "
 "sono il modo più sicuro per pagare l'ingresso, il giro in brujita, i pasti e"
 " l'alloggio."
+
+msgid "Solo falta un paso"
+msgstr "Manca solo un passo"
+
+msgid ""
+"Envíanos tu solicitud por WhatsApp y presiona enviar. El mensaje ya incluye "
+"tus fechas, número de personas y los servicios que quieres, para cotizarte "
+"más rápido."
+msgstr ""
+"Inviaci la tua richiesta su WhatsApp e premi invia. Il messaggio include già"
+" le tue date, il numero di persone e i servizi che desideri, così possiamo "
+"farti un preventivo più in fretta."
+
+msgid "Enviar mi solicitud por WhatsApp"
+msgstr "Invia la mia richiesta su WhatsApp"

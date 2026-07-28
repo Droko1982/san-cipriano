@@ -1850,3 +1850,18 @@ msgstr ""
 "Cipriano, le réseau est limité et il n'y a pas toujours de terminal de "
 "paiement ni de distributeur ; l'argent liquide est donc le moyen le plus sûr"
 " de payer l'entrée, le trajet en brujita, les repas et l'hébergement."
+
+msgid "Solo falta un paso"
+msgstr "Il ne reste qu'une étape"
+
+msgid ""
+"Envíanos tu solicitud por WhatsApp y presiona enviar. El mensaje ya incluye "
+"tus fechas, número de personas y los servicios que quieres, para cotizarte "
+"más rápido."
+msgstr ""
+"Envoyez-nous votre demande sur WhatsApp et appuyez sur envoyer. Le message "
+"inclut déjà vos dates, le nombre de personnes et les services souhaités, "
+"pour un devis plus rapide."
+
+msgid "Enviar mi solicitud por WhatsApp"
+msgstr "Envoyer ma demande sur WhatsApp"

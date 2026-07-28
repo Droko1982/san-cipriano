@@ -3,6 +3,8 @@ Context processors for global template variables.
 """
 
 import re
+from urllib.parse import quote
+
 from django.conf import settings
 from django.utils.translation import get_language
 
@@ -54,11 +56,26 @@ def site_settings(request):
             'url': translated_path,
         })
 
+    community_whatsapp = getattr(config, "community_whatsapp", None) or getattr(settings, "COMMUNITY_WHATSAPP", "+573160592569")
+
+    # Prefilled WhatsApp "quote request" so direct contacts already ask the
+    # visitor for the details the community needs to quote (dates, people, services).
+    quote_msg = (
+        "Hola San Cipriano 🌿 Quiero una cotización para mi visita.\n\n"
+        "📅 Fechas (llegada y salida): \n"
+        "👥 Número de personas (y menores): \n"
+        "🎯 Servicios que me interesan (hospedaje, alimentación, brujitas, guía, tours, entrada): \n\n"
+        "¡Gracias!"
+    )
+    _wa_number = community_whatsapp.lstrip("+").replace(" ", "")
+    whatsapp_quote_url = f"https://wa.me/{_wa_number}?text={quote(quote_msg)}"
+
     return {
         "site_config": config,
         "site_name": getattr(config, "site_name", None) or getattr(settings, "SITE_NAME", "San Cipriano"),
         "site_tagline": getattr(config, "tagline", None) or getattr(settings, "SITE_TAGLINE", "Reserva Natural Comunitaria"),
-        "community_whatsapp": getattr(config, "community_whatsapp", None) or getattr(settings, "COMMUNITY_WHATSAPP", "+573160592569"),
+        "community_whatsapp": community_whatsapp,
+        "whatsapp_quote_url": whatsapp_quote_url,
         "community_email": getattr(config, "community_email", None) or getattr(settings, "COMMUNITY_EMAIL", ""),
         "available_languages": getattr(settings, "LANGUAGES", [("es", "Español")]),
         "languages_with_urls": languages_with_urls,

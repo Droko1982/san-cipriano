@@ -1853,3 +1853,18 @@ msgstr ""
 "Yes, we recommend bringing enough cash. In San Cipriano the phone signal is "
 "limited and there is not always a card reader or ATM, so cash is the safest "
 "way to pay for the entrance, the brujita ride, food and lodging."
+
+msgid "Solo falta un paso"
+msgstr "Just one more step"
+
+msgid ""
+"Envíanos tu solicitud por WhatsApp y presiona enviar. El mensaje ya incluye "
+"tus fechas, número de personas y los servicios que quieres, para cotizarte "
+"más rápido."
+msgstr ""
+"Send us your request on WhatsApp and press send. The message already "
+"includes your dates, number of people and the services you want, so we can "
+"quote you faster."
+
+msgid "Enviar mi solicitud por WhatsApp"
+msgstr "Send my request on WhatsApp"

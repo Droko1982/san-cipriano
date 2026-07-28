@@ -1898,3 +1898,18 @@ msgstr ""
 "Empfang eingeschränkt und es gibt nicht immer ein Kartenlesegerät oder einen"
 " Geldautomaten. Bargeld ist daher die sicherste Zahlungsart für Eintritt, "
 "Brujita-Fahrt, Essen und Unterkunft."
+
+msgid "Solo falta un paso"
+msgstr "Nur noch ein Schritt"
+
+msgid ""
+"Envíanos tu solicitud por WhatsApp y presiona enviar. El mensaje ya incluye "
+"tus fechas, número de personas y los servicios que quieres, para cotizarte "
+"más rápido."
+msgstr ""
+"Senden Sie uns Ihre Anfrage über WhatsApp und drücken Sie auf Senden. Die "
+"Nachricht enthält bereits Ihre Daten, die Personenzahl und die gewünschten "
+"Leistungen, damit wir Ihnen schneller ein Angebot machen können."
+
+msgid "Enviar mi solicitud por WhatsApp"
+msgstr "Meine Anfrage über WhatsApp senden"

@@ -1855,3 +1855,18 @@ msgstr ""
 "sinal é limitado e nem sempre há maquininha de cartão ou caixa eletrônico, "
 "então o dinheiro é a forma mais segura de pagar a entrada, o passeio de "
 "brujita, a comida e a hospedagem."
+
+msgid "Solo falta un paso"
+msgstr "Falta só um passo"
+
+msgid ""
+"Envíanos tu solicitud por WhatsApp y presiona enviar. El mensaje ya incluye "
+"tus fechas, número de personas y los servicios que quieres, para cotizarte "
+"más rápido."
+msgstr ""
+"Envie-nos o seu pedido pelo WhatsApp e toque em enviar. A mensagem já inclui"
+" as suas datas, o número de pessoas e os serviços que deseja, para cotarmos "
+"mais rápido."
+
+msgid "Enviar mi solicitud por WhatsApp"
+msgstr "Enviar meu pedido pelo WhatsApp"

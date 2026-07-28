@@ -2,15 +2,58 @@
 Visitors views - Form handling and counter
 """
 
+from urllib.parse import quote
+
+from django.conf import settings
 from django.contrib import messages
 from django.shortcuts import redirect
 from django.urls import reverse_lazy
+from django.utils import translation
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import CreateView, TemplateView
 
 from apps.core.utils import get_client_ip
 from .forms import VisitorInquiryForm
 from .models import VisitorInquiry, VisitorCounter
+
+
+def build_inquiry_whatsapp_url(inquiry):
+    """Build a wa.me link to the community with the inquiry details prefilled,
+    so the visitor's request actually reaches the community's WhatsApp chat.
+    The message is composed in Spanish (the community's language)."""
+    def fmt_date(d):
+        return d.strftime("%Y-%m-%d") if d else "Por definir"
+
+    with translation.override("es"):
+        services = ", ".join(str(s) for s in inquiry.services_display) or "No especificado"
+
+    lines = [
+        "Hola San Cipriano 🌿 Quiero planificar mi visita:",
+        "",
+        f"👤 Nombre: {inquiry.full_name}",
+        f"📱 Tel/WhatsApp: {inquiry.phone}",
+        f"✉️ Correo: {inquiry.email}",
+        f"📍 Ciudad/País: {inquiry.city}, {inquiry.country}",
+        f"📅 Llegada: {fmt_date(inquiry.estimated_arrival)} · Salida: {fmt_date(inquiry.estimated_departure)}",
+        f"👥 Personas: {inquiry.number_of_people} (menores: {inquiry.number_of_children})",
+        f"🎯 Servicios: {services}",
+    ]
+    if inquiry.special_requests:
+        lines.append(f"📝 Solicitudes: {inquiry.special_requests}")
+
+    # Resolve the community number the same way as the site-wide context
+    # processor (DB config first, then settings) so all WhatsApp links match.
+    community_whatsapp = getattr(settings, "COMMUNITY_WHATSAPP", "+573160592569")
+    try:
+        from apps.core.models import SiteConfiguration
+        cfg = SiteConfiguration.get_config()
+        if cfg and getattr(cfg, "community_whatsapp", None):
+            community_whatsapp = cfg.community_whatsapp
+    except Exception:
+        pass
+
+    number = community_whatsapp.lstrip("+").replace(" ", "")
+    return f"https://wa.me/{number}?text={quote(chr(10).join(lines))}"
 
 
 class InquiryFormView(CreateView):
@@ -45,6 +88,10 @@ class InquiryFormView(CreateView):
         counter = VisitorCounter.get_counter()
         counter.increment()
 
+        # Build a WhatsApp handoff link with the inquiry details so the request
+        # actually reaches the community's chat (the thank-you page uses this).
+        self.request.session["inquiry_wa_url"] = build_inquiry_whatsapp_url(self.object)
+
         # Trigger notifications (handled by signals)
         messages.success(
             self.request,
@@ -64,6 +111,8 @@ class ThankYouView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["page_title"] = _("¡Gracias por tu interés!")
+        # One-time WhatsApp handoff URL built from the submitted inquiry.
+        context["inquiry_wa_url"] = self.request.session.pop("inquiry_wa_url", None)
         return context
 
 
