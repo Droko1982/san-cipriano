@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static i18n %}
+{% comment %}
+Shared layout for the travel guides. Texts for <title>, meta, hero and FAQ come from
+apps/content/guides.py (context var "guide"); each guide fills {% block guide_body %}.
+{% endcomment %}
+
+{% block title %}{{ guide.title }}{% endblock %}
+{% block meta_description %}{{ guide.meta_description }}{% endblock %}
+{% block og_title %}{{ guide.title }}{% endblock %}
+{% block og_description %}{{ guide.meta_description }}{% endblock %}
+{% block og_image %}{{ request.scheme }}://{{ request.get_host }}{% static guide.image %}{% endblock %}
+{% block breadcrumb_name %}{{ guide.h1 }}{% endblock %}
+
+{% block extra_head %}
+<script type="application/ld+json">{{ guide_schema }}</script>
+{% endblock %}
+
+{% block content %}
+<!-- Hero -->
+<section class="relative bg-gradient-to-br from-selva-700 to-rio-800 text-white py-20 px-4 overflow-hidden">
+    <div class="absolute inset-0 opacity-40">
+        <img src="{% static guide.image %}" alt="" class="w-full h-full object-cover" fetchpriority="high">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-b from-selva-900/60 to-selva-900/80"></div>
+    <div class="relative max-w-4xl mx-auto text-center">
+        <span class="inline-block text-6xl mb-4">{{ guide.emoji }}</span>
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">{{ guide.h1 }}</h1>
+        <p class="text-selva-100 text-lg max-w-2xl mx-auto">{{ guide.lead }}</p>
+        <p class="text-selva-200 text-sm mt-4">
+            {% trans "Actualizado" %}: <time datetime="{{ guide_updated|date:'Y-m-d' }}">{{ guide_updated|date:"F Y" }}</time>
+        </p>
+    </div>
+</section>
+
+<!-- Guide body -->
+<article class="py-12 px-4">
+    <div class="max-w-3xl mx-auto text-gray-700 leading-relaxed">
+        {% block guide_body %}{% endblock %}
+    </div>
+</article>
+
+<!-- FAQ -->
+<section class="py-12 px-4 bg-gray-50">
+    <div class="max-w-3xl mx-auto">
+        <h2 class="font-display text-3xl font-bold text-gray-900 mb-6 text-center">{% trans "Preguntas Frecuentes" %}</h2>
+        <div class="space-y-4">
+            {% for question, answer in guide.faqs %}
+            <details class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden group"{% if forloop.first %} open{% endif %}>
+                <summary class="w-full px-6 py-4 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <h3 class="font-semibold text-gray-900">{{ question }}</h3>
+                    <svg class="w-5 h-5 text-gray-500 transform transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <div class="px-6 pb-4">
+                    <p class="text-gray-600">{{ answer }}</p>
+                </div>
+            </details>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-14 px-4 bg-gradient-to-r from-green-600 to-selva-700 text-white">
+    <div class="max-w-2xl mx-auto text-center">
+        <h2 class="font-display text-3xl font-bold mb-3">{% trans "¿Listo para visitar San Cipriano?" %}</h2>
+        <p class="text-selva-100 mb-6">{% trans "Escríbenos por WhatsApp con tus fechas y número de personas y te enviamos tu cotización." %}</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="{{ whatsapp_quote_url }}" target="_blank" rel="noopener"
+               class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-green-700 text-lg font-bold rounded-xl shadow-lg transition-all hover:scale-105">
+                {% include "includes/_whatsapp_icon.html" %}
+                {% trans "Cotizar por WhatsApp" %}
+            </a>
+            <a href="{% url 'visitors:inquiry_form' %}"
+               class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white text-lg font-semibold rounded-xl border border-white/30 transition-all">
+                {% trans "Planifica tu Visita" %}
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Related guides -->
+<section class="py-14 px-4">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="font-display text-2xl font-bold text-gray-900 mb-6 text-center">{% trans "Más guías para planear tu viaje" %}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {% for related in related_guides %}
+            <a href="{{ related.url }}" class="block bg-white rounded-2xl p-6 shadow-sm border border-selva-100 hover:shadow-lg transition-shadow">
+                <span class="text-3xl">{{ related.emoji }}</span>
+                <h3 class="font-display text-xl font-bold text-selva-900 mt-2 mb-1">{{ related.card_title }}</h3>
+                <p class="text-gray-600 text-sm">{{ related.card_desc }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

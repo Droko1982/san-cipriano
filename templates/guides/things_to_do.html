@@ -1,0 +1,68 @@
+{% extends "guides/_guide_base.html" %}
+{% load static i18n %}
+
+{% block guide_body %}
+<p class="text-lg mb-10">{% trans "San Cipriano es uno de los mejores planes de naturaleza cerca de Cali. Estos son los 8 planes que recomienda la comunidad para tu visita." %}</p>
+
+<div class="space-y-8 mb-10">
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">1. 🚃 {% trans "Viajar en brujita" %}</h2>
+        <p>{% trans "Llega como llegan todos: en brujita, el transporte sobre rieles impulsado por moto que cruza la selva en 15-20 minutos." %}
+            <a href="{% url 'guides:brujitas' %}" class="text-selva-700 hover:text-selva-900 font-semibold underline">{% trans "Todo sobre las brujitas" %}</a>.</p>
+    </section>
+
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">2. 💧 {% trans "Nadar en ríos cristalinos" %}</h2>
+        <p>{% trans "Los ríos de San Cipriano son famosos por su agua transparente. Báñate en charcos y pozos naturales rodeado de selva." %}</p>
+    </section>
+
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">3. 🛟 {% trans "Bajar el río en flotador (tubing)" %}</h2>
+        <p class="mb-4">{% trans "Déjate llevar por la corriente en un flotador, siempre con chaleco salvavidas. Es uno de los planes favoritos de grupos y familias." %}</p>
+        <img src="{% static 'images/gallery/flotadores.jpg' %}" alt="{% trans 'Flotador y chaleco salvavidas para hacer tubing en el río de San Cipriano' %}" class="w-full h-56 md:h-72 object-cover rounded-2xl" loading="lazy">
+    </section>
+
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">4. 🌿 {% trans "Caminar hasta las cascadas" %}</h2>
+        <p class="mb-4">{% trans "Los senderos ecológicos te llevan por la selva hasta cascadas y pozos naturales. Recórrelos con un guía de la comunidad." %}</p>
+        <img src="{% static 'images/gallery/cascada.jpg' %}" alt="{% trans 'Cascada en medio de la selva de San Cipriano' %}" class="w-full h-56 md:h-72 object-cover rounded-2xl" loading="lazy">
+    </section>
+
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">5. 🦜 {% trans "Avistamiento de aves" %}</h2>
+        <p>{% trans "Más de 200 especies de aves habitan en la reserva. Lleva binoculares y sal temprano en la mañana, cuando hay más actividad." %}</p>
+    </section>
+
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">6. 🐸 {% trans "Descubrir ranas y fauna del Chocó" %}</h2>
+        <p>{% trans "La reserva es hogar de ranas venenosas de colores y especies únicas del Chocó biogeográfico. Obsérvalas sin tocarlas." %}
+            <a href="{% url 'content:biodiversity' %}" class="text-selva-700 hover:text-selva-900 font-semibold underline">{% trans "Conoce la biodiversidad" %}</a>.</p>
+    </section>
+
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">7. 🍽️ {% trans "Probar la cocina del Pacífico" %}</h2>
+        <p>{% trans "Pescado fresco, arroz con coco y patacón preparados por la comunidad con productos del Pacífico." %}</p>
+    </section>
+
+    <section>
+        <h2 class="font-display text-2xl font-bold text-selva-900 mb-2">8. ✊🏿 {% trans "Conocer la cultura palenquera" %}</h2>
+        <p>{% trans "San Cipriano es una comunidad afrodescendiente heredera de los palenques. Conversa con su gente y conoce cómo cuidan la reserva." %}
+            <a href="{% url 'content:about' %}" class="text-selva-700 hover:text-selva-900 font-semibold underline">{% trans "Nuestra historia" %}</a>.</p>
+    </section>
+</div>
+
+<div class="bg-selva-50 rounded-2xl p-6 mb-10">
+    <h2 class="font-display text-2xl font-bold text-selva-900 mb-3">{% trans "¿Pasadía o quedarse a dormir?" %}</h2>
+    <p class="mb-4">{% trans "Puedes visitar San Cipriano en un pasadía, pero recomendamos quedarte al menos una noche: disfrutas los ríos sin multitudes, el amanecer en la selva y la gastronomía del Pacífico." %}</p>
+    <p>{% trans "El plan de hospedaje con 3 comidas cuesta $140.000 por persona reservando por WhatsApp." %}
+        <a href="{% url 'guides:prices' %}" class="text-selva-700 hover:text-selva-900 font-semibold underline">{% trans "Ver todos los precios" %}</a>.</p>
+</div>
+
+<h2 class="font-display text-2xl md:text-3xl font-bold text-selva-900 mb-4">{% trans "Antes de ir" %}</h2>
+<ul class="space-y-3">
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "No uses protector solar ni repelente químico en el río: contaminan el agua." %}</span></li>
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "Lleva zapatos para agua, traje de baño y ropa manga larga." %}</span></li>
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "Lleva efectivo o Nequi: en San Cipriano no hay cajeros." %}</span></li>
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "Sigue siempre las indicaciones de los guías en el río y en los senderos." %}</span></li>
+</ul>
+{% endblock %}

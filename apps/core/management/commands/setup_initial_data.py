@@ -188,7 +188,7 @@ class Command(BaseCommand):
             {
                 "name": "Viaje en Brujita",
                 "description": "La experiencia única de viajar en los tradicionales carros sobre rieles impulsados por motocicletas. Una aventura que solo encontrarás en San Cipriano.",
-                "duration_info": "30 minutos",
+                "duration_info": "15-20 minutos",
                 "difficulty": "Fácil",
                 "icon": "🚃",
                 "is_featured": True,

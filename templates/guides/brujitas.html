@@ -1,0 +1,54 @@
+{% extends "guides/_guide_base.html" %}
+{% load static i18n %}
+
+{% block guide_body %}
+<!-- Quick facts -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+    <div class="bg-rio-50 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-rio-700">15-20 min</p>
+        <p class="text-sm text-gray-600">{% trans "Duración del viaje" %}</p>
+    </div>
+    <div class="bg-tierra-50 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-tierra-700">$24.000</p>
+        <p class="text-sm text-gray-600">{% trans "Ida y vuelta por persona" %}</p>
+    </div>
+    <div class="bg-selva-50 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-selva-800">🛡️</p>
+        <p class="text-sm text-gray-600">{% trans "Seguro incluido" %}</p>
+    </div>
+    <div class="bg-amber-50 rounded-xl p-4 text-center">
+        <p class="text-2xl font-bold text-amber-700">6am - 6pm</p>
+        <p class="text-sm text-gray-600">{% trans "Horario de las brujitas" %}</p>
+    </div>
+</div>
+
+<h2 class="font-display text-2xl md:text-3xl font-bold text-selva-900 mb-4">{% trans "¿Qué son las brujitas?" %}</h2>
+<p class="mb-4">{% trans "Las brujitas son pequeños carros de madera que ruedan sobre los rieles del tren, impulsados por una motocicleta. Son un invento local para moverse por la vía férrea entre Córdoba y San Cipriano, donde no llega la carretera." %}</p>
+<p class="mb-8">{% trans "Hoy son el transporte oficial para llegar a la reserva y una de las experiencias más originales de Colombia: viajar sobre rieles en medio de la selva no se vive en ningún otro lugar." %}</p>
+
+<div class="rounded-2xl overflow-hidden shadow-lg mb-8">
+    <video controls playsinline preload="none" poster="{% static 'images/gallery/estacion-nueva.jpg' %}" class="w-full aspect-video bg-black">
+        <source src="{% static 'videos/brujitas.mp4' %}" type="video/mp4">
+        {% trans "Tu navegador no soporta el elemento de video." %}
+    </video>
+</div>
+
+<h2 class="font-display text-2xl md:text-3xl font-bold text-selva-900 mb-4">{% trans "Cómo es el recorrido" %}</h2>
+<p class="mb-8">{% trans "El viaje sale de la estación de brujitas en Córdoba y dura entre 15 y 20 minutos. Atraviesas la selva tropical del Chocó biogeográfico, cruzas puentes sobre ríos y sientes el viento mientras la brujita avanza sobre los rieles." %}</p>
+
+<h2 class="font-display text-2xl md:text-3xl font-bold text-selva-900 mb-4">{% trans "Precio y seguro" %}</h2>
+<p class="mb-8">{% trans "El paseo cuesta $24.000 COP por persona, ida y vuelta, e incluye un seguro de Colasistencia. La entrada a la reserva se paga aparte ($10.000 por persona). Lleva efectivo o Nequi, porque en San Cipriano no hay cajeros." %}</p>
+
+<h2 class="font-display text-2xl md:text-3xl font-bold text-selva-900 mb-4">{% trans "Consejos para el viaje en brujita" %}</h2>
+<ul class="space-y-3 mb-8">
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "Sujétate bien y sigue las indicaciones del operador durante todo el trayecto." %}</span></li>
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "Viaja con poco equipaje: el espacio en la brujita es reducido." %}</span></li>
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "Guarda el celular y la cámara en un bolso seguro mientras la brujita avanza." %}</span></li>
+    <li class="flex gap-2"><span class="text-selva-500">✓</span><span>{% trans "Si vas a dormir, llega antes de las 4pm para instalarte con luz de día." %}</span></li>
+</ul>
+
+<p>
+    {% trans "¿Cómo llegas a la estación de brujitas? Mira la" %}
+    <a href="{% url 'guides:how_to_get' %}" class="text-selva-700 hover:text-selva-900 font-semibold underline">{% trans "ruta paso a paso desde Cali" %}</a>.
+</p>
+{% endblock %}

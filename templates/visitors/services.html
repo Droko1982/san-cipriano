@@ -3,7 +3,7 @@
 
 {% block title %}{% trans "Servicios, Precios y Paquetes Turísticos" %}{% endblock %}
 
-{% block meta_description %}{% trans "Precios y paquetes todo incluido en San Cipriano 2026: hospedaje, alimentación, paseo en brujitas y tours desde $229,000 COP. Plan fin de semana cerca de Cali. Reserva y ahorra hasta 25%." %}{% endblock %}
+{% block meta_description %}{% trans "Precios San Cipriano 2026: entrada $10.000, brujita $24.000 ida y vuelta con seguro y hospedaje con 3 comidas desde $140.000 por persona reservando por WhatsApp. Plan de fin de semana cerca de Cali." %}{% endblock %}
 
 {% block breadcrumb_name %}{% trans "Servicios y Precios" %}{% endblock %}
 
@@ -20,11 +20,11 @@
     },
     "offers": {
         "@type": "AggregateOffer",
-        "lowPrice": "229000",
-        "highPrice": "500000",
+        "lowPrice": "140000",
+        "highPrice": "220000",
         "priceCurrency": "COP",
         "availability": "https://schema.org/InStock",
-        "offerCount": "5"
+        "offerCount": "2"
     },
     "image": "{{ request.scheme }}://{{ request.get_host }}{% static 'images/gallery/rio-cristalino.jpg' %}"
 }
@@ -314,7 +314,7 @@
                     <ol class="space-y-3 text-gray-600">
                         <li class="flex gap-3">
                             <span class="bg-rio-100 text-rio-700 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">1</span>
-                            <span>{% trans "Tomar la vía Cali - Buenaventura (aproximadamente 3 horas)" %}</span>
+                            <span>{% trans "Tomar la vía Cali - Buenaventura (aproximadamente 2,5 horas)" %}</span>
                         </li>
                         <li class="flex gap-3">
                             <span class="bg-rio-100 text-rio-700 w-6 h-6 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0">2</span>
@@ -329,6 +329,9 @@
                             <span>{% trans "Tomar la brujita hacia San Cipriano (15-20 minutos)" %}</span>
                         </li>
                     </ol>
+                    <a href="{% url 'guides:how_to_get' %}" class="inline-flex items-center gap-1 mt-4 text-rio-700 hover:text-rio-900 font-medium text-sm underline">
+                        {% trans "Ver la guía completa para llegar" %} →
+                    </a>
                 </div>
                 <div>
                     <h3 class="font-semibold text-lg text-gray-900 mb-4">{% trans "Información Importante" %}</h3>

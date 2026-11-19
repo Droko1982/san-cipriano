@@ -150,6 +150,11 @@ class SitemapView(View):
             {"url": "/seguridad/", "priority": "0.8", "changefreq": "monthly", "lastmod": today},
             {"url": "/visitantes/planifica/", "priority": "0.9", "changefreq": "monthly", "lastmod": today},
             {"url": "/contenido/preguntas/", "priority": "0.7", "changefreq": "monthly", "lastmod": today},
+            # Travel guides (apps/content/guide_urls.py) — high-intent search pages
+            {"url": "/como-llegar-a-san-cipriano/", "priority": "0.9", "changefreq": "monthly", "lastmod": today},
+            {"url": "/precios-san-cipriano/", "priority": "0.9", "changefreq": "monthly", "lastmod": today},
+            {"url": "/brujitas-san-cipriano/", "priority": "0.8", "changefreq": "monthly", "lastmod": today},
+            {"url": "/que-hacer-en-san-cipriano/", "priority": "0.8", "changefreq": "monthly", "lastmod": today},
             {"url": "/contenido/contacto/", "priority": "0.7", "changefreq": "monthly", "lastmod": today},
             {"url": "/terminos/", "priority": "0.5", "changefreq": "yearly", "lastmod": "2026-01-01"},
             {"url": "/privacidad/", "priority": "0.5", "changefreq": "yearly", "lastmod": "2026-01-01"},

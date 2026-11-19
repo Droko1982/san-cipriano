@@ -55,6 +55,7 @@ urlpatterns += i18n_patterns(
     path("", include("apps.core.urls")),
     path("visitantes/", include("apps.visitors.urls")),
     path("contenido/", include("apps.content.urls")),
+    path("", include("apps.content.guide_urls")),
     prefix_default_language=False,
 )
 

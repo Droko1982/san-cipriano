@@ -444,10 +444,10 @@
                     {% trans "¿Cómo llegar a San Cipriano desde Cali?" %}
                 </h3>
                 <p class="text-gray-700 leading-relaxed">
-                    {% trans "San Cipriano queda en el municipio de Buenaventura, Valle del Cauca, a unas 2 horas de Cali por la vía Cali–Buenaventura. Se llega hasta el corregimiento de Córdoba y desde allí se toma la brujita, el famoso transporte sobre rieles impulsado por motocicleta que te lleva por la selva hasta la reserva. Es una experiencia única en Colombia y parte esencial de la aventura." %}
+                    {% trans "San Cipriano queda en el municipio de Buenaventura, Valle del Cauca, a unas 2,5 horas de Cali por la vía Cali–Buenaventura. Antes de llegar a Buenaventura se toma el desvío al corregimiento de Córdoba y desde allí se sube a la brujita, el famoso transporte sobre rieles impulsado por motocicleta que en 15-20 minutos te lleva por la selva hasta la reserva. Es una experiencia única en Colombia y parte esencial de la aventura." %}
                 </p>
-                <a href="{% url 'content:faq' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
-                    {% trans "Ver más detalles en las preguntas frecuentes" %} →
+                <a href="{% url 'guides:how_to_get' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
+                    {% trans "Ver la guía completa para llegar" %} →
                 </a>
             </article>
 
@@ -456,9 +456,9 @@
                     {% trans "¿Cuánto cuesta visitar San Cipriano?" %}
                 </h3>
                 <p class="text-gray-700 leading-relaxed">
-                    {% trans "Hay planes para todos los presupuestos: pasadías desde $140.000 COP por persona y paquetes todo incluido con hospedaje comunitario, alimentación típica del Pacífico, paseo en brujita y tours guiados. Reservando directamente con la comunidad obtienes los precios oficiales, sin intermediarios, y ahorras hasta un 25%." %}
+                    {% trans "Hay planes para todos los presupuestos: la entrada a la reserva cuesta $10.000 COP y la brujita $24.000 COP ida y vuelta con seguro incluido. El plan de hospedaje con 3 comidas cuesta $140.000 COP por persona reservando por WhatsApp desde esta página, y la experiencia completa con tours guiados, flotadores y chalecos, $220.000 COP. Reservando directamente con la comunidad obtienes los precios oficiales, sin intermediarios." %}
                 </p>
-                <a href="{% url 'visitors:services' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
+                <a href="{% url 'guides:prices' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
                     {% trans "Ver precios y paquetes completos" %} →
                 </a>
             </article>
@@ -470,8 +470,8 @@
                 <p class="text-gray-700 leading-relaxed">
                     {% trans "Nadar en ríos de agua cristalina y charcos naturales, bajar el río en flotador (tubing), caminar senderos ecológicos hasta cascadas escondidas, avistar más de 200 especies de aves, descubrir ranas de colores del Chocó biogeográfico y disfrutar la gastronomía del Pacífico preparada por la comunidad. Todo acompañado por guías locales que conocen la selva como nadie." %}
                 </p>
-                <a href="{% url 'content:biodiversity' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
-                    {% trans "Explorar la biodiversidad de la reserva" %} →
+                <a href="{% url 'guides:things_to_do' %}" class="inline-flex items-center gap-1 mt-3 text-selva-700 hover:text-selva-900 font-medium text-sm">
+                    {% trans "Ver los 8 planes imperdibles" %} →
                 </a>
             </article>
 

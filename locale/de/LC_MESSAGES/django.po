@@ -217,12 +217,13 @@ msgstr "GPS-Koordinaten:"
 msgid "Cómo llegar:"
 msgstr "Anreise:"
 
-msgid "Desde Cali: Tomar la vía al mar hacia Buenaventura (~3 horas)"
+msgid "Desde Cali: tomar la vía Cali–Buenaventura (~2,5 horas hasta Córdoba)"
 msgstr ""
-"Von Cali: Nehmen Sie die Straße zum Meer Richtung Buenaventura (~3 Stunden)"
+"Von Cali: die Straße Cali–Buenaventura nehmen (~2,5 Stunden bis Córdoba)"
 
-msgid "Pasar Buenaventura y continuar hacia Córdoba (~20 min)"
-msgstr "Buenaventura passieren und weiter nach Córdoba (~20 Min)"
+msgid ""
+"Antes de llegar a Buenaventura, desviarse hacia el corregimiento de Córdoba"
+msgstr "Vor Buenaventura in Richtung des Dorfes Córdoba abbiegen"
 
 msgid "Detenerse en la estación de las Brujitas"
 msgstr "An der Brujitas-Station anhalten"
@@ -1302,8 +1303,8 @@ msgstr "Anreise"
 msgid "Desde Cali"
 msgstr "Von Cali"
 
-msgid "Tomar la vía Cali - Buenaventura (aproximadamente 3 horas)"
-msgstr "Nehmen Sie die Straße Cali - Buenaventura (ca. 3 Stunden)"
+msgid "Tomar la vía Cali - Buenaventura (aproximadamente 2,5 horas)"
+msgstr "Die Straße Cali - Buenaventura nehmen (etwa 2,5 Stunden)"
 
 msgid "Antes de llegar a Buenaventura, desviarse hacia Córdoba (km 74)"
 msgstr "Vor Buenaventura Richtung Córdoba abbiegen (km 74)"
@@ -1406,25 +1407,33 @@ msgid "¿Cómo llego a San Cipriano?"
 msgstr "Wie komme ich nach San Cipriano?"
 
 msgid ""
-"Las indicaciones exactas de llegada se proporcionan después de completar el "
-"formulario de registro. Esto nos ayuda a proteger la reserva y garantizar "
-"una visita organizada."
+"Desde Cali se toma la vía Cali–Buenaventura (unas 2,5 horas). Antes de "
+"llegar a Buenaventura se desvía hacia el corregimiento de Córdoba, donde "
+"está la estación de las brujitas; desde allí la brujita te lleva a San "
+"Cipriano en 15-20 minutos. Las brujitas operan de 6am a 6pm. Escríbenos por "
+"WhatsApp y te ayudamos a coordinar tu llegada."
 msgstr ""
-"Genaue Anfahrtsbeschreibungen werden nach Ausfüllen des Anmeldeformulars "
-"bereitgestellt. Dies hilft uns, das Reservat zu schützen und einen "
-"organisierten Besuch zu gewährleisten."
+"Von Cali aus nehmen Sie die Straße Cali–Buenaventura (etwa 2,5 Stunden). Vor"
+" Buenaventura biegen Sie zum Dorf Córdoba ab, wo sich die Brujita-Station "
+"befindet; von dort bringt Sie die Brujita in 15–20 Minuten nach San "
+"Cipriano. Die Brujitas fahren von 6 bis 18 Uhr. Schreiben Sie uns per "
+"WhatsApp und wir helfen Ihnen, Ihre Anreise zu planen."
 
 msgid "¿Cuánto cuesta visitar San Cipriano?"
 msgstr "Wie viel kostet ein Besuch in San Cipriano?"
 
 msgid ""
-"Los costos varían según los servicios que necesites, el número de personas y"
-" la duración de tu estadía. Una vez completes el formulario, te enviaremos "
-"información personalizada con precios exactos."
+"La entrada a la reserva cuesta $10.000 COP por persona y la brujita $24.000 "
+"COP ida y vuelta, con seguro incluido. Si te quedas a dormir, el plan de "
+"hospedaje con 3 comidas cuesta $140.000 COP por persona reservando por "
+"WhatsApp desde esta página. Los tours guiados, el parqueadero y otros "
+"servicios se cotizan aparte."
 msgstr ""
-"Die Kosten variieren je nach benötigten Dienstleistungen, Personenzahl und "
-"Aufenthaltsdauer. Nach Ausfüllen des Formulars senden wir Ihnen "
-"personalisierte Informationen mit genauen Preisen."
+"Der Eintritt ins Reservat kostet 10.000 COP pro Person und die Brujita "
+"24.000 COP hin und zurück, Versicherung inklusive. Wenn Sie übernachten, "
+"kostet das Unterkunftspaket mit 3 Mahlzeiten 140.000 COP pro Person bei "
+"Buchung per WhatsApp über diese Seite. Geführte Touren, Parkplatz und "
+"weitere Leistungen werden separat berechnet."
 
 msgid "¿Necesito reservar con anticipación?"
 msgstr "Muss ich im Voraus buchen?"
@@ -1704,34 +1713,36 @@ msgstr "Wie komme ich von Cali nach San Cipriano?"
 
 msgid ""
 "San Cipriano queda en el municipio de Buenaventura, Valle del Cauca, a unas "
-"2 horas de Cali por la vía Cali–Buenaventura. Se llega hasta el "
-"corregimiento de Córdoba y desde allí se toma la brujita, el famoso "
-"transporte sobre rieles impulsado por motocicleta que te lleva por la selva "
-"hasta la reserva. Es una experiencia única en Colombia y parte esencial de "
-"la aventura."
+"2,5 horas de Cali por la vía Cali–Buenaventura. Antes de llegar a "
+"Buenaventura se toma el desvío al corregimiento de Córdoba y desde allí se "
+"sube a la brujita, el famoso transporte sobre rieles impulsado por "
+"motocicleta que en 15-20 minutos te lleva por la selva hasta la reserva. Es "
+"una experiencia única en Colombia y parte esencial de la aventura."
 msgstr ""
-"San Cipriano liegt in der Gemeinde Buenaventura, Valle del Cauca, etwa 2 "
-"Stunden von Cali entfernt an der Straße Cali–Buenaventura. Man fährt bis zum"
-" Dorf Córdoba und nimmt von dort die Brujita, die berühmte "
-"motorradbetriebene Schienendraisine, die Sie durch den Dschungel bis zum "
-"Reservat bringt. Ein einzigartiges Erlebnis in Kolumbien und ein "
-"wesentlicher Teil des Abenteuers."
+"San Cipriano liegt in der Gemeinde Buenaventura im Valle del Cauca, etwa 2,5"
+" Stunden von Cali entfernt über die Straße Cali–Buenaventura. Vor "
+"Buenaventura biegt man zum Dorf Córdoba ab und steigt dort in die Brujita, "
+"das berühmte, von einem Motorrad angetriebene Schienenfahrzeug, das Sie in "
+"15–20 Minuten durch den Dschungel zum Reservat bringt. Ein einzigartiges "
+"Erlebnis in Kolumbien und ein wesentlicher Teil des Abenteuers."
 
 msgid "Ver más detalles en las preguntas frecuentes"
 msgstr "Mehr Details in den häufigen Fragen"
 
 msgid ""
-"Hay planes para todos los presupuestos: pasadías desde $140.000 COP por "
-"persona y paquetes todo incluido con hospedaje comunitario, alimentación "
-"típica del Pacífico, paseo en brujita y tours guiados. Reservando "
-"directamente con la comunidad obtienes los precios oficiales, sin "
-"intermediarios, y ahorras hasta un 25%."
+"Hay planes para todos los presupuestos: la entrada a la reserva cuesta "
+"$10.000 COP y la brujita $24.000 COP ida y vuelta con seguro incluido. El "
+"plan de hospedaje con 3 comidas cuesta $140.000 COP por persona reservando "
+"por WhatsApp desde esta página, y la experiencia completa con tours guiados,"
+" flotadores y chalecos, $220.000 COP. Reservando directamente con la "
+"comunidad obtienes los precios oficiales, sin intermediarios."
 msgstr ""
-"Es gibt Angebote für jedes Budget: Tagesausflüge ab 140.000 COP pro Person "
-"und All-inclusive-Pakete mit Gemeinschaftsunterkunft, typischer "
-"Pazifikküche, Brujita-Fahrt und geführten Touren. Wer direkt bei der "
-"Gemeinschaft bucht, erhält offizielle Preise ohne Zwischenhändler und spart "
-"bis zu 25 %."
+"Es gibt Angebote für jedes Budget: Der Eintritt ins Reservat kostet 10.000 "
+"COP und die Brujita 24.000 COP hin und zurück inklusive Versicherung. Das "
+"Unterkunftspaket mit 3 Mahlzeiten kostet 140.000 COP pro Person bei Buchung "
+"per WhatsApp über diese Seite, das Komplettpaket mit geführten Touren, "
+"Schwimmreifen und Schwimmwesten 220.000 COP. Wenn Sie direkt bei der "
+"Gemeinde buchen, erhalten Sie die offiziellen Preise ohne Zwischenhändler."
 
 msgid "Ver precios y paquetes completos"
 msgstr "Alle Preise und Pakete ansehen"
@@ -1913,3 +1924,1220 @@ msgstr ""
 
 msgid "Enviar mi solicitud por WhatsApp"
 msgstr "Meine Anfrage über WhatsApp senden"
+
+msgid ""
+"Precios San Cipriano 2026: entrada $10.000, brujita $24.000 ida y vuelta con"
+" seguro y hospedaje con 3 comidas desde $140.000 por persona reservando por "
+"WhatsApp. Plan de fin de semana cerca de Cali."
+msgstr ""
+"San Cipriano Preise 2026: Eintritt 10.000 COP, Brujita 24.000 COP hin und "
+"zurück mit Versicherung und Unterkunft mit 3 Mahlzeiten ab 140.000 COP pro "
+"Person bei Buchung per WhatsApp. Wochenendausflug nahe Cali."
+
+msgid "$24.000 COP por persona, ida y vuelta, con seguro incluido."
+msgstr "$24.000 COP pro Person, hin und zurück, Versicherung inklusive."
+
+msgid "($4.000)"
+msgstr "($4.000)"
+
+msgid "Abrir menú de navegación"
+msgstr "Navigationsmenü öffnen"
+
+msgid ""
+"Acceso a los senderos, ríos cristalinos y espacios naturales de la reserva. "
+"Incluye uso de charcos y zonas de descanso."
+msgstr ""
+"Zugang zu den Wanderwegen, kristallklaren Flüssen und Naturräumen des "
+"Reservats. Inklusive Nutzung der Badestellen und Ruhebereiche."
+
+msgid "Actualizado"
+msgstr "Aktualisiert"
+
+msgid ""
+"Al reservar con nosotros garantizas tu lugar, evitas sobrecostos de "
+"temporada alta y obtienes los mejores precios directamente con la comunidad."
+msgstr ""
+"Mit Ihrer Reservierung sichern Sie sich Ihren Platz, vermeiden Aufpreise in "
+"der Hochsaison und erhalten die besten Preise direkt von der Gemeinde."
+
+msgid "Al visitar San Cipriano, aceptas nuestros términos y condiciones."
+msgstr ""
+"Mit Ihrem Besuch in San Cipriano akzeptieren Sie unsere Allgemeinen "
+"Geschäftsbedingungen."
+
+msgid "Antes de ir"
+msgstr "Vor der Reise"
+
+msgid ""
+"Antes de llegar a Buenaventura, toma el desvío hacia el corregimiento de "
+"Córdoba."
+msgstr "Biegen Sie vor Buenaventura zum Dorf Córdoba ab."
+
+msgid "Armas de fuego"
+msgstr "Schusswaffen"
+
+msgid "Avistamiento de aves"
+msgstr "Vogelbeobachtung"
+
+msgid "Avistamiento de aves en San Cipriano"
+msgstr "Vogelbeobachtung in San Cipriano"
+
+msgid ""
+"Avistamiento de aves en San Cipriano Colombia - birdwatching Pacífico "
+"colombiano +200 especies"
+msgstr ""
+"Vogelbeobachtung in San Cipriano Kolumbien - Birdwatching an der "
+"kolumbianischen Pazifikküste, über 200 Arten"
+
+msgid "Bajar el río en flotador (tubing)"
+msgstr "Den Fluss im Schwimmreifen hinuntertreiben (Tubing)"
+
+msgid "Baño en el río"
+msgstr "Baden im Fluss"
+
+msgid ""
+"Biodiversidad única en San Cipriano, Colombia: +200 especies de aves, ranas "
+"venenosas multicolores, flora del Chocó biogeográfico. Avistamiento de aves,"
+" senderismo en selva tropical y tours nocturnos. El mejor destino de "
+"naturaleza cerca de Cali."
+msgstr ""
+"Einzigartige Artenvielfalt in San Cipriano, Kolumbien: über 200 Vogelarten, "
+"bunte Pfeilgiftfrösche, Flora des biogeografischen Chocó. Vogelbeobachtung, "
+"Wandern im tropischen Regenwald und Nachttouren. Das beste Naturziel in der "
+"Nähe von Cali."
+
+msgid "Biodiversidad: Aves, Ranas y Selva Tropical"
+msgstr "Artenvielfalt: Vögel, Frösche und tropischer Regenwald"
+
+msgid "Brujita de San Cipriano - transporte único sobre rieles en Colombia"
+msgstr ""
+"Brujita von San Cipriano - einzigartiges Schienenfahrzeug in Kolumbien"
+
+msgid "Brujita ida y vuelta"
+msgstr "Brujita hin und zurück"
+
+msgid "Brujita ida y vuelta con seguro"
+msgstr "Brujita hin und zurück mit Versicherung"
+
+msgid "Brujitas de San Cipriano: precio y horario"
+msgstr "Brujitas von San Cipriano: Preis und Fahrzeiten"
+
+msgid "Cambiar idioma"
+msgstr "Sprache wechseln"
+
+msgid "Caminar hasta las cascadas"
+msgstr "Zu den Wasserfällen wandern"
+
+msgid "Careta de snorkel"
+msgstr "Schnorchelmaske"
+
+msgid "Cargador portátil"
+msgstr "Powerbank"
+
+msgid "Cascada"
+msgstr "Wasserfall"
+
+msgid ""
+"Cascada de agua cristalina en San Cipriano Colombia - ecoturismo Pacífico "
+"colombiano"
+msgstr ""
+"Wasserfall mit kristallklarem Wasser in San Cipriano Kolumbien - "
+"Ökotourismus an der kolumbianischen Pazifikküste"
+
+msgid "Cascada en medio de la selva de San Cipriano"
+msgstr "Wasserfall mitten im Regenwald von San Cipriano"
+
+msgid "Cerrar galería"
+msgstr "Galerie schließen"
+
+msgid "Comida"
+msgstr "Essen"
+
+msgid ""
+"Como herederos de la tradición palenquera, nuestra comunidad ha mantenido "
+"viva la cultura, las tradiciones y el espíritu de libertad de nuestros "
+"antepasados. Durante generaciones, hemos vivido en armonía con la selva, "
+"practicando la pesca, la agricultura y aprovechando de manera sostenible los"
+" recursos que la naturaleza nos brinda."
+msgstr ""
+"Als Erben der Palenque-Tradition hat unsere Gemeinde die Kultur, die "
+"Traditionen und den Freiheitsgeist unserer Vorfahren lebendig gehalten. Seit"
+" Generationen leben wir im Einklang mit dem Regenwald, betreiben Fischerei "
+"und Landwirtschaft und nutzen die Ressourcen, die uns die Natur schenkt, "
+"nachhaltig."
+
+msgid ""
+"Completa el formulario con tus datos y necesidades. La comunidad te "
+"contactará con información personalizada sobre tu visita."
+msgstr ""
+"Füllen Sie das Formular mit Ihren Angaben und Wünschen aus. Die Gemeinde "
+"meldet sich mit persönlichen Informationen zu Ihrem Besuch bei Ihnen."
+
+msgid ""
+"Con el tiempo, reconocimos el valor único de nuestro hogar: ríos de aguas "
+"cristalinas que son de los más puros de Colombia, bosques vírgenes y una "
+"biodiversidad que pocos lugares en el mundo pueden igualar. Decidimos "
+"entonces abrir nuestras puertas al turismo, pero manteniendo nuestra esencia"
+" comunitaria."
+msgstr ""
+"Mit der Zeit erkannten wir den einzigartigen Wert unserer Heimat: Flüsse mit"
+" kristallklarem Wasser, die zu den reinsten Kolumbiens gehören, unberührte "
+"Wälder und eine Artenvielfalt, die nur wenige Orte der Welt erreichen. So "
+"beschlossen wir, unsere Türen für den Tourismus zu öffnen, aber unsere "
+"gemeinschaftliche Seele zu bewahren."
+
+msgid "Conoce la biodiversidad"
+msgstr "Die Artenvielfalt entdecken"
+
+msgid "Conocer la cultura palenquera"
+msgstr "Die Palenque-Kultur kennenlernen"
+
+msgid "Consejos para el viaje en brujita"
+msgstr "Tipps für die Fahrt in der Brujita"
+
+msgid "Consejos para tu llegada"
+msgstr "Tipps für Ihre Anreise"
+
+msgid "Cookies"
+msgstr "Cookies"
+
+msgid "Correo Electrónico"
+msgstr "E-Mail"
+
+msgid "Cotizar por WhatsApp"
+msgstr "Per WhatsApp anfragen"
+
+msgid "Cómo es el recorrido"
+msgstr "So verläuft die Fahrt"
+
+msgid "Cómo llegar"
+msgstr "Anreise"
+
+msgid "Cómo llegar a San Cipriano"
+msgstr "Anreise nach San Cipriano"
+
+msgid "Cómo llegar a San Cipriano desde Cali (2026)"
+msgstr "Anreise nach San Cipriano ab Cali (2026)"
+
+msgid ""
+"Cómo llegar a San Cipriano paso a paso: desde Cali son unas 2,5 horas por la"
+" vía a Buenaventura hasta Córdoba y luego 15-20 minutos en brujita. Rutas en"
+" carro y bus, horarios y parqueadero."
+msgstr ""
+"Anreise nach San Cipriano Schritt für Schritt: Ab Cali sind es etwa 2,5 "
+"Stunden auf der Straße nach Buenaventura bis Córdoba, dann 15–20 Minuten in "
+"der Brujita. Routen mit Auto und Bus, Fahrzeiten und Parkplatz."
+
+msgid "Cómo pagar"
+msgstr "So bezahlen Sie"
+
+msgid ""
+"Deja tu vehículo en el parqueadero vigilado junto a la estación de brujitas "
+"($15.000 - $20.000 por día o por noche)."
+msgstr ""
+"Lassen Sie Ihr Fahrzeug auf dem bewachten Parkplatz neben der Brujita-"
+"Station stehen ($15.000 - $20.000 pro Tag oder pro Nacht)."
+
+msgid ""
+"Descubre San Cipriano: comunidad afrodescendiente del Pacífico colombiano "
+"con ríos cristalinos y cascadas únicas. Historia, cultura palenquera, "
+"brujitas y el mejor ecoturismo comunitario de Colombia cerca de Cali."
+msgstr ""
+"Entdecken Sie San Cipriano: eine afrokolumbianische Gemeinde an der "
+"kolumbianischen Pazifikküste mit kristallklaren Flüssen und einzigartigen "
+"Wasserfällen. Geschichte, Palenque-Kultur, Brujitas und der beste Gemeinde-"
+"Ökotourismus Kolumbiens in der Nähe von Cali."
+
+msgid "Descubrir ranas y fauna del Chocó"
+msgstr "Frösche und Fauna des Chocó entdecken"
+
+msgid "Desde Buenaventura"
+msgstr "Ab Buenaventura"
+
+msgid "Desde Cali hasta Córdoba"
+msgstr "Von Cali nach Córdoba"
+
+msgid ""
+"Desde la Terminal de Transportes de Cali salen buses hacia Buenaventura. "
+"Pídele al conductor que te deje en el desvío de Córdoba y desde allí sigue "
+"hasta la estación de las brujitas."
+msgstr ""
+"Vom Busbahnhof (Terminal de Transportes) in Cali fahren Busse nach "
+"Buenaventura. Bitten Sie den Fahrer, Sie an der Abzweigung nach Córdoba "
+"abzusetzen, und gehen Sie von dort weiter zur Brujita-Station."
+
+msgid "Duración del viaje"
+msgstr "Dauer der Fahrt"
+
+msgid ""
+"Déjate llevar por la corriente en un flotador, siempre con chaleco "
+"salvavidas. Es uno de los planes favoritos de grupos y familias."
+msgstr ""
+"Lassen Sie sich in einem Schwimmreifen von der Strömung treiben, immer mit "
+"Schwimmweste. Es ist eines der beliebtesten Angebote für Gruppen und "
+"Familien."
+
+msgid "Efectivo o Nequi (no hay cajeros)"
+msgstr "Bargeld oder Nequi (keine Geldautomaten)"
+
+msgid ""
+"El paseo cuesta $24.000 COP por persona, ida y vuelta, e incluye un seguro "
+"de Colasistencia. La entrada a la reserva se paga aparte ($10.000 por "
+"persona). Lleva efectivo o Nequi, porque en San Cipriano no hay cajeros."
+msgstr ""
+"Die Fahrt kostet $24.000 COP pro Person, hin und zurück, und beinhaltet eine"
+" Versicherung von Colasistencia. Der Eintritt ins Reservat wird separat "
+"bezahlt ($10.000 pro Person). Nehmen Sie Bargeld oder Nequi mit, denn in San"
+" Cipriano gibt es keine Geldautomaten."
+
+msgid ""
+"El plan de hospedaje con 3 comidas cuesta $140.000 COP por persona por noche"
+" reservando por WhatsApp desde esta página. Con tour guiado incluido, la "
+"experiencia completa cuesta $220.000 COP por persona."
+msgstr ""
+"Das Unterkunftspaket mit 3 Mahlzeiten kostet $140.000 COP pro Person und "
+"Nacht bei Buchung per WhatsApp über diese Seite. Mit inbegriffener geführter"
+" Tour kostet das Komplettpaket $220.000 COP pro Person."
+
+msgid ""
+"El plan de hospedaje con 3 comidas cuesta $140.000 por persona reservando "
+"por WhatsApp."
+msgstr ""
+"Das Unterkunftspaket mit 3 Mahlzeiten kostet $140.000 pro Person bei Buchung"
+" per WhatsApp."
+
+msgid ""
+"El turismo en San Cipriano es 100% comunitario. Cada servicio, cada "
+"hospedaje, cada tour es gestionado por familias locales. El visitante no "
+"viene a consumir un producto turístico convencional, viene a vivir una "
+"experiencia auténtica y a contribuir directamente al bienestar de nuestra "
+"comunidad y la preservación de nuestra herencia cultural."
+msgstr ""
+"Der Tourismus in San Cipriano ist zu 100 % gemeinschaftlich. Jede Leistung, "
+"jede Unterkunft, jede Tour wird von einheimischen Familien organisiert. "
+"Besucher kommen nicht, um ein herkömmliches Tourismusprodukt zu konsumieren,"
+" sondern um ein authentisches Erlebnis zu erleben und direkt zum Wohl "
+"unserer Gemeinde und zum Erhalt unseres kulturellen Erbes beizutragen."
+
+msgid ""
+"El viaje sale de la estación de brujitas en Córdoba y dura entre 15 y 20 "
+"minutos. Atraviesas la selva tropical del Chocó biogeográfico, cruzas "
+"puentes sobre ríos y sientes el viento mientras la brujita avanza sobre los "
+"rieles."
+msgstr ""
+"Die Fahrt beginnt an der Brujita-Station in Córdoba und dauert 15 bis 20 "
+"Minuten. Sie durchqueren den tropischen Regenwald des biogeografischen "
+"Chocó, überqueren Brücken über Flüsse und spüren den Fahrtwind, während die "
+"Brujita über die Schienen rollt."
+
+msgid "En brujita hasta San Cipriano"
+msgstr "Mit der Brujita nach San Cipriano"
+
+msgid "Entrada y brujita ($34.000) más un almuerzo (desde $25.000)."
+msgstr "Eintritt und Brujita ($34.000) plus ein Mittagessen (ab $25.000)."
+
+msgid ""
+"Entrada y brujita suman $34.000 COP por persona. Con almuerzo (desde $25.000"
+" COP), un pasadía queda desde unos $59.000 COP por persona, sin contar el "
+"transporte hasta Córdoba."
+msgstr ""
+"Eintritt und Brujita zusammen kosten $34.000 COP pro Person. Mit Mittagessen"
+" (ab $25.000 COP) kostet ein Tagesausflug etwa $59.000 COP pro Person, ohne "
+"den Transport bis Córdoba."
+
+msgid "Entrada, brujita, hospedaje, comida y presupuestos de ejemplo."
+msgstr "Eintritt, Brujita, Unterkunft, Essen und Beispielbudgets."
+
+msgid "Entre 15 y 20 minutos desde la estación de Córdoba hasta San Cipriano."
+msgstr "Zwischen 15 und 20 Minuten von der Station Córdoba bis San Cipriano."
+
+msgid "Escribir por WhatsApp"
+msgstr "Per WhatsApp schreiben"
+
+msgid ""
+"Escríbenos por WhatsApp con tus fechas y número de personas y te enviamos tu"
+" cotización."
+msgstr ""
+"Schreiben Sie uns per WhatsApp mit Ihren Daten und der Personenzahl, und wir"
+" senden Ihnen Ihr Angebot."
+
+msgid ""
+"Estacionamiento seguro y vigilado para tu vehículo en la entrada de la "
+"reserva, cerca de la estación de brujitas. Día y noche se cobran por "
+"separado."
+msgstr ""
+"Sicherer, bewachter Parkplatz für Ihr Fahrzeug am Eingang des Reservats, in "
+"der Nähe der Brujita-Station. Tag und Nacht werden separat berechnet."
+
+msgid "Estamos aquí para ayudarte a planificar tu visita a San Cipriano."
+msgstr ""
+"Wir sind hier, um Ihnen bei der Planung Ihres Besuchs in San Cipriano zu "
+"helfen."
+
+msgid ""
+"Estas aguas cristalinas son el tesoro de nuestra comunidad. Ayúdanos a "
+"mantenerlas puras."
+msgstr ""
+"Dieses kristallklare Wasser ist der Schatz unserer Gemeinde. Helfen Sie uns,"
+" es rein zu halten."
+
+msgid "Experiencia completa"
+msgstr "Komplettpaket"
+
+msgid "Experiencia completa (hospedaje, 3 comidas y tour)"
+msgstr "Komplettpaket (Unterkunft, 3 Mahlzeiten und Tour)"
+
+msgid "Fauna"
+msgstr "Fauna"
+
+msgid ""
+"Fines de semana y festivos hay más visitantes: reserva con al menos una "
+"semana de anticipación."
+msgstr ""
+"An Wochenenden und Feiertagen kommen mehr Besucher: Reservieren Sie "
+"mindestens eine Woche im Voraus."
+
+msgid ""
+"Flotador y chaleco salvavidas para hacer tubing en el río de San Cipriano"
+msgstr ""
+"Schwimmreifen und Schwimmweste zum Tubing auf dem Fluss von San Cipriano"
+
+msgid ""
+"Gastronomía local preparada por la comunidad. Desayuno, almuerzo y cena con "
+"productos frescos del Pacífico."
+msgstr ""
+"Lokale Küche, von der Gemeinde zubereitet. Frühstück, Mittag- und Abendessen"
+" mit frischen Produkten von der Pazifikküste."
+
+msgid "Gorra o sombrero"
+msgstr "Mütze oder Hut"
+
+msgid ""
+"Guarda el celular y la cámara en un bolso seguro mientras la brujita avanza."
+msgstr ""
+"Bewahren Sie Handy und Kamera in einer sicheren Tasche auf, während die "
+"Brujita fährt."
+
+msgid "Guías de viaje"
+msgstr "Reiseführer"
+
+msgid "Hemos recibido tu solicitud correctamente."
+msgstr "Wir haben Ihre Anfrage erfolgreich erhalten."
+
+msgid "Historia y Cultura Afrodescendiente"
+msgstr "Afrokolumbianische Geschichte und Kultur"
+
+msgid "Horario de las brujitas"
+msgstr "Fahrzeiten der Brujitas"
+
+msgid ""
+"Hospedaje 1 noche + 3 comidas (desayuno, almuerzo y cena) reservando por "
+"WhatsApp desde esta página."
+msgstr ""
+"Unterkunft 1 Nacht + 3 Mahlzeiten (Frühstück, Mittag- und Abendessen) bei "
+"Buchung per WhatsApp über diese Seite."
+
+msgid "Hospedaje asegurado"
+msgstr "Unterkunft gesichert"
+
+msgid "Hospedaje comunitario"
+msgstr "Gemeinschaftsunterkunft"
+
+msgid ""
+"Hospedaje ecológico comunitario en San Cipriano - turismo sostenible "
+"Colombia"
+msgstr ""
+"Ökologische Gemeinschaftsunterkunft in San Cipriano - nachhaltiger Tourismus"
+" Kolumbien"
+
+msgid "Hospedaje y 3 comidas ($140.000) más entrada y brujita ($34.000)."
+msgstr ""
+"Unterkunft und 3 Mahlzeiten ($140.000) plus Eintritt und Brujita ($34.000)."
+
+msgid ""
+"Hospedaje, 3 comidas y tour guiado ($220.000) más entrada y brujita "
+"($34.000)."
+msgstr ""
+"Unterkunft, 3 Mahlzeiten und geführte Tour ($220.000) plus Eintritt und "
+"Brujita ($34.000)."
+
+msgid ""
+"Hoy son el transporte oficial para llegar a la reserva y una de las "
+"experiencias más originales de Colombia: viajar sobre rieles en medio de la "
+"selva no se vive en ningún otro lugar."
+msgstr ""
+"Heute sind sie das offizielle Transportmittel zum Reservat und eines der "
+"originellsten Erlebnisse Kolumbiens: Mitten im Regenwald auf Schienen zu "
+"fahren, erlebt man nirgendwo sonst."
+
+msgid "Ida y vuelta por persona"
+msgstr "Hin und zurück pro Person"
+
+msgid "Imagen anterior"
+msgstr "Vorheriges Bild"
+
+msgid "Imagen siguiente"
+msgstr "Nächstes Bild"
+
+msgid ""
+"Incluye chalecos salvavidas, flotadores, visita a las cascadas y los pozos "
+"naturales."
+msgstr ""
+"Inklusive Schwimmwesten, Schwimmreifen, Besuch der Wasserfälle und der "
+"natürlichen Badebecken."
+
+msgid "Incluye seguro de"
+msgstr "Inklusive Versicherung von"
+
+msgid "Ingresar al río bajo efectos de alcohol o drogas"
+msgstr "In den Fluss gehen unter Einfluss von Alkohol oder Drogen"
+
+msgid ""
+"La entrada a la reserva cuesta $10.000 COP por persona. La brujita se paga "
+"aparte: $24.000 COP ida y vuelta, con seguro incluido."
+msgstr ""
+"Der Eintritt ins Reservat kostet $10.000 COP pro Person. Die Brujita wird "
+"separat bezahlt: $24.000 COP hin und zurück, Versicherung inklusive."
+
+msgid ""
+"La experiencia única de viajar en los famosos carros sobre rieles. Recorrido"
+" de 3km atravesando la selva."
+msgstr ""
+"Das einzigartige Erlebnis, in den berühmten Schienenfahrzeugen zu reisen. "
+"Eine 3 km lange Fahrt durch den Regenwald."
+
+msgid ""
+"La forma más rápida de contactarnos. Respondemos en horario de 7am a 8pm."
+msgstr "Der schnellste Weg, uns zu erreichen. Wir antworten von 7 bis 20 Uhr."
+
+msgid ""
+"La reserva es hogar de ranas venenosas de colores y especies únicas del "
+"Chocó biogeográfico. Obsérvalas sin tocarlas."
+msgstr ""
+"Das Reservat ist Heimat bunter Pfeilgiftfrösche und einzigartiger Arten des "
+"biogeografischen Chocó. Beobachten Sie sie, ohne sie zu berühren."
+
+msgid ""
+"La reserva se confirma solo después de contacto directo con la comunidad."
+msgstr ""
+"Die Reservierung gilt erst nach direktem Kontakt mit der Gemeinde als "
+"bestätigt."
+
+msgid ""
+"La señal de celular es limitada: confirma tu reserva y hora de llegada antes"
+" de salir."
+msgstr ""
+"Der Handyempfang ist begrenzt: Bestätigen Sie Ihre Reservierung und "
+"Ankunftszeit, bevor Sie losfahren."
+
+msgid "Las Brujitas - carros sobre rieles"
+msgstr "Die Brujitas - Schienenfahrzeuge"
+
+msgid "Las brujitas"
+msgstr "Die Brujitas"
+
+msgid "Las brujitas de San Cipriano"
+msgstr "Die Brujitas von San Cipriano"
+
+msgid ""
+"Las brujitas operan de 6am a 6pm. El paseo ida y vuelta cuesta $24.000 COP "
+"por persona e incluye el seguro."
+msgstr ""
+"Die Brujitas fahren von 6 bis 18 Uhr. Die Hin- und Rückfahrt kostet $24.000 "
+"COP pro Person und beinhaltet die Versicherung."
+
+msgid "Las brujitas operan de 6am a 6pm: planea llegar a Córdoba con tiempo."
+msgstr ""
+"Die Brujitas fahren von 6 bis 18 Uhr: Planen Sie, rechtzeitig in Córdoba "
+"anzukommen."
+
+msgid ""
+"Las brujitas son pequeños carros de madera que ruedan sobre los rieles del "
+"tren, impulsados por una motocicleta. Son un invento local para moverse por "
+"la vía férrea entre Córdoba y San Cipriano, donde no llega la carretera."
+msgstr ""
+"Die Brujitas sind kleine Holzwagen, die auf den Bahnschienen rollen und von "
+"einem Motorrad angetrieben werden. Sie sind eine lokale Erfindung, um sich "
+"auf der Bahnstrecke zwischen Córdoba und San Cipriano fortzubewegen, wohin "
+"keine Straße führt."
+
+msgid "Leer Términos y Condiciones completos"
+msgstr "Vollständige Allgemeine Geschäftsbedingungen lesen"
+
+msgid "Letrero del parqueadero oficial de la Reserva San Cipriano"
+msgstr "Schild des offiziellen Parkplatzes des Reservats San Cipriano"
+
+msgid "Lista de precios"
+msgstr "Preisliste"
+
+msgid ""
+"Llega como llegan todos: en brujita, el transporte sobre rieles impulsado "
+"por moto que cruza la selva en 15-20 minutos."
+msgstr ""
+"Kommen Sie an wie alle: in der Brujita, dem motorradbetriebenen "
+"Schienenfahrzeug, das den Regenwald in 15–20 Minuten durchquert."
+
+msgid ""
+"Lleva efectivo o Nequi: en San Cipriano no hay cajeros y la señal de celular"
+" es limitada."
+msgstr ""
+"Nehmen Sie Bargeld oder Nequi mit: In San Cipriano gibt es keine "
+"Geldautomaten und der Handyempfang ist begrenzt."
+
+msgid "Lleva efectivo o Nequi: en San Cipriano no hay cajeros."
+msgstr ""
+"Nehmen Sie Bargeld oder Nequi mit: In San Cipriano gibt es keine "
+"Geldautomaten."
+
+msgid "Lleva zapatos para agua, traje de baño y ropa manga larga."
+msgstr "Nehmen Sie Wasserschuhe, Badebekleidung und langärmlige Kleidung mit."
+
+msgid ""
+"Los precios oficiales de la comunidad para que armes tu presupuesto sin "
+"sorpresas. Reservando directamente por WhatsApp no pagas intermediarios."
+msgstr ""
+"Die offiziellen Preise der Gemeinde, damit Sie Ihr Budget ohne "
+"Überraschungen planen können. Bei direkter Buchung per WhatsApp zahlen Sie "
+"keine Zwischenhändler."
+
+msgid "Los precios y disponibilidad se informan de manera personalizada."
+msgstr "Preise und Verfügbarkeit werden individuell mitgeteilt."
+
+msgid ""
+"Los ríos de San Cipriano son famosos por su agua transparente. Báñate en "
+"charcos y pozos naturales rodeado de selva."
+msgstr ""
+"Die Flüsse von San Cipriano sind berühmt für ihr glasklares Wasser. Baden "
+"Sie in natürlichen Becken und Badestellen, umgeben vom Regenwald."
+
+msgid ""
+"Los senderos ecológicos te llevan por la selva hasta cascadas y pozos "
+"naturales. Recórrelos con un guía de la comunidad."
+msgstr ""
+"Die ökologischen Wanderwege führen Sie durch den Regenwald zu Wasserfällen "
+"und natürlichen Badebecken. Gehen Sie sie mit einem Guide aus der Gemeinde."
+
+msgid "Mejores precios garantizados"
+msgstr "Beste Preise garantiert"
+
+msgid "Mira el detalle de cada servicio y paquete en"
+msgstr "Sehen Sie die Details zu jeder Leistung und jedem Paket unter"
+
+msgid ""
+"Más de 200 especies de aves habitan en la reserva. Lleva binoculares y sal "
+"temprano en la mañana, cuando hay más actividad."
+msgstr ""
+"Mehr als 200 Vogelarten leben im Reservat. Nehmen Sie ein Fernglas mit und "
+"brechen Sie früh am Morgen auf, wenn die meiste Aktivität herrscht."
+
+msgid "Más guías para planear tu viaje"
+msgstr "Weitere Reiseführer zur Planung Ihrer Reise"
+
+msgid "Nadar en ríos cristalinos"
+msgstr "In kristallklaren Flüssen schwimmen"
+
+msgid ""
+"Nadar en ríos cristalinos, bajar el río en flotador, caminar hasta cascadas,"
+" avistar aves, viajar en brujita y probar la cocina del Pacífico, entre "
+"otros planes de naturaleza."
+msgstr ""
+"In kristallklaren Flüssen schwimmen, den Fluss im Schwimmreifen "
+"hinuntertreiben, zu Wasserfällen wandern, Vögel beobachten, in der Brujita "
+"fahren und die Küche der Pazifikküste probieren, neben weiteren "
+"Naturangeboten."
+
+msgid "No Llevar / Prohibido"
+msgstr "Nicht mitbringen / Verboten"
+
+msgid "No se permite:"
+msgstr "Nicht erlaubt:"
+
+msgid ""
+"No uses protector solar - los químicos contaminan el río. Usa gorra, camisa "
+"manga larga o sombrilla"
+msgstr ""
+"Verwenden Sie keine Sonnencreme - die Chemikalien verschmutzen den Fluss. "
+"Tragen Sie Mütze, langärmliges Hemd oder Sonnenschirm"
+
+msgid ""
+"No uses protector solar ni repelente químico en el río: contaminan el agua."
+msgstr ""
+"Verwenden Sie im Fluss weder Sonnencreme noch chemisches "
+"Insektenschutzmittel: Sie verschmutzen das Wasser."
+
+msgid ""
+"No. El carro llega hasta Córdoba, donde hay un parqueadero vigilado. El "
+"último tramo hasta San Cipriano se hace en brujita, sobre los rieles que "
+"atraviesan la selva."
+msgstr ""
+"Nein. Das Auto fährt bis Córdoba, wo es einen bewachten Parkplatz gibt. Das "
+"letzte Stück bis San Cipriano legt man in der Brujita zurück, auf den "
+"Schienen, die durch den Regenwald führen."
+
+msgid ""
+"Normas de protección ambiental de San Cipriano. Cómo cuidar la reserva "
+"natural: no basura, no plásticos, respeto a la fauna y flora del Pacífico "
+"colombiano."
+msgstr ""
+"Umweltschutzregeln von San Cipriano. Wie man das Naturreservat schützt: kein"
+" Müll, kein Plastik, Respekt vor Fauna und Flora der kolumbianischen "
+"Pazifikküste."
+
+msgid ""
+"Normas de seguridad para visitar San Cipriano. Uso obligatorio de chaleco "
+"salvavidas, guías autorizados y recomendaciones para tu seguridad en el río."
+msgstr ""
+"Sicherheitsregeln für den Besuch von San Cipriano. Schwimmwestenpflicht, "
+"autorisierte Guides und Empfehlungen für Ihre Sicherheit im Fluss."
+
+msgid ""
+"Nota: El parqueadero es por vehículo, no por persona. Los precios pueden "
+"variar según temporada."
+msgstr ""
+"Hinweis: Der Parkplatz gilt pro Fahrzeug, nicht pro Person. Die Preise "
+"können je nach Saison variieren."
+
+msgid "Nuestra historia"
+msgstr "Unsere Geschichte"
+
+msgid "Paquete Turístico"
+msgstr "Reisepaket"
+
+msgid "Paquete turístico"
+msgstr "Reisepaket"
+
+msgid "Para consultas detalladas o información que prefieras por escrito."
+msgstr ""
+"Für ausführliche Anfragen oder Informationen, die Sie lieber schriftlich "
+"erhalten möchten."
+
+msgid ""
+"Para los senderos y las cascadas recomendamos ir con guías de la comunidad: "
+"conocen la selva y las normas de seguridad del río."
+msgstr ""
+"Für die Wanderwege und Wasserfälle empfehlen wir, mit Guides aus der "
+"Gemeinde zu gehen: Sie kennen den Regenwald und die Sicherheitsregeln des "
+"Flusses."
+
+msgid "Parqueadero oficial"
+msgstr "Offizieller Parkplatz"
+
+msgid "Pasadía"
+msgstr "Tagesausflug"
+
+msgid ""
+"Pequeños carros sobre rieles impulsados por motocicleta: la única forma de "
+"llegar a San Cipriano y una aventura en sí misma."
+msgstr ""
+"Kleine, motorradbetriebene Schienenfahrzeuge: die einzige Möglichkeit, nach "
+"San Cipriano zu gelangen, und ein Abenteuer für sich."
+
+msgid ""
+"Pescado fresco, arroz con coco y patacón preparados por la comunidad con "
+"productos del Pacífico."
+msgstr ""
+"Frischer Fisch, Kokosreis und Patacón, von der Gemeinde mit Produkten der "
+"Pazifikküste zubereitet."
+
+msgid "Plan 1 noche"
+msgstr "Paket 1 Nacht"
+
+msgid "Plan hospedaje + 3 comidas"
+msgstr "Paket Unterkunft + 3 Mahlzeiten"
+
+msgid "Plástico de un solo uso"
+msgstr "Einwegplastik"
+
+msgid "Política de Privacidad"
+msgstr "Datenschutzerklärung"
+
+msgid "Por día o noche"
+msgstr "Pro Tag oder Nacht"
+
+msgid ""
+"Por favor lee estas normas de seguridad antes de tu visita. Tu bienestar es "
+"nuestra prioridad."
+msgstr ""
+"Bitte lesen Sie diese Sicherheitsregeln vor Ihrem Besuch. Ihr Wohlergehen "
+"ist unsere Priorität."
+
+msgid "Por persona, 1 noche"
+msgstr "Pro Person, 1 Nacht"
+
+msgid "Por persona, 1 noche, reservando por WhatsApp"
+msgstr "Pro Person, 1 Nacht, bei Buchung per WhatsApp"
+
+msgid "Por persona, incluye seguro"
+msgstr "Pro Person, Versicherung inklusive"
+
+msgid "Por vehículo, por día o noche"
+msgstr "Pro Fahrzeug, pro Tag oder Nacht"
+
+msgid "Pozos naturales de aguas cristalinas en San Cipriano"
+msgstr "Natürliche Badebecken mit kristallklarem Wasser in San Cipriano"
+
+msgid ""
+"Pozos y charcos naturales de agua cristalina en San Cipriano - piscinas "
+"naturales Colombia"
+msgstr ""
+"Natürliche Becken und Badestellen mit kristallklarem Wasser in San Cipriano "
+"- natürliche Pools Kolumbien"
+
+msgid "Precio (COP)"
+msgstr "Preis (COP)"
+
+msgid "Precio y seguro"
+msgstr "Preis und Versicherung"
+
+msgid "Precios 2026"
+msgstr "Preise 2026"
+
+msgid "Precios San Cipriano 2026: cuánto cuesta ir"
+msgstr "Preise San Cipriano 2026: Was kostet der Besuch?"
+
+msgid "Precios de San Cipriano 2026"
+msgstr "Preise von San Cipriano 2026"
+
+msgid ""
+"Precios en pesos colombianos. Pueden variar en temporada alta: confirma tu "
+"cotización por WhatsApp. El transporte desde tu ciudad hasta Córdoba no está"
+" incluido."
+msgstr ""
+"Preise in kolumbianischen Pesos. In der Hochsaison können sie variieren: "
+"Bestätigen Sie Ihr Angebot per WhatsApp. Der Transport von Ihrer Stadt bis "
+"Córdoba ist nicht inbegriffen."
+
+msgid ""
+"Preguntas frecuentes sobre San Cipriano 2026: cómo llegar desde Cali, qué "
+"llevar, precios actualizados, brujitas, seguridad y más. Guía completa antes"
+" de tu visita a la reserva natural."
+msgstr ""
+"Häufige Fragen zu San Cipriano 2026: Anreise ab Cali, was man mitnehmen "
+"sollte, aktuelle Preise, Brujitas, Sicherheit und mehr. Kompletter Ratgeber "
+"für Ihren Besuch im Naturreservat."
+
+msgid "Presupuestos de ejemplo por persona"
+msgstr "Beispielbudgets pro Person"
+
+msgid "Probar la cocina del Pacífico"
+msgstr "Die Küche der Pazifikküste probieren"
+
+msgid "Puede requerir un anticipo para confirmar tu lugar."
+msgstr ""
+"Es kann eine Anzahlung erforderlich sein, um Ihren Platz zu bestätigen."
+
+msgid ""
+"Puedes visitar San Cipriano en un pasadía, pero recomendamos quedarte al "
+"menos una noche: disfrutas los ríos sin multitudes, el amanecer en la selva "
+"y la gastronomía del Pacífico."
+msgstr ""
+"Sie können San Cipriano im Rahmen eines Tagesausflugs besuchen, wir "
+"empfehlen jedoch, mindestens eine Nacht zu bleiben: So genießen Sie die "
+"Flüsse ohne Menschenmassen, den Sonnenaufgang im Regenwald und die Küche der"
+" Pazifikküste."
+
+msgid "Qué hacer"
+msgstr "Was tun"
+
+msgid "Qué hacer en San Cipriano"
+msgstr "Was man in San Cipriano tun kann"
+
+msgid "Qué hacer en San Cipriano: 8 planes imperdibles"
+msgstr "Was man in San Cipriano tun kann: 8 unverzichtbare Erlebnisse"
+
+msgid ""
+"Qué hacer en San Cipriano: nadar en ríos cristalinos, bajar el río en "
+"flotador, caminar a cascadas, ver más de 200 especies de aves, viajar en "
+"brujita y probar la cocina del Pacífico. Cerca de Cali."
+msgstr ""
+"Was man in San Cipriano tun kann: in kristallklaren Flüssen schwimmen, den "
+"Fluss im Schwimmreifen hinuntertreiben, zu Wasserfällen wandern, mehr als "
+"200 Vogelarten sehen, in der Brujita fahren und die Küche der Pazifikküste "
+"probieren. In der Nähe von Cali."
+
+msgid "Qué son, cuánto cuestan, horario y consejos para el viaje."
+msgstr "Was sie sind, was sie kosten, Fahrzeiten und Tipps für die Fahrt."
+
+msgid "Rana tropical"
+msgstr "Tropischer Frosch"
+
+msgid "Rana tropical de San Cipriano"
+msgstr "Tropischer Frosch von San Cipriano"
+
+msgid ""
+"Rana venenosa de colores en San Cipriano - anfibios únicos selva tropical "
+"Colombia"
+msgstr ""
+"Bunter Pfeilgiftfrosch in San Cipriano - einzigartige Amphibien im "
+"tropischen Regenwald Kolumbiens"
+
+msgid ""
+"Rana venenosa tropical en San Cipriano - biodiversidad Colombia Chocó "
+"biogeográfico"
+msgstr ""
+"Tropischer Pfeilgiftfrosch in San Cipriano - Artenvielfalt Kolumbien "
+"biogeografischer Chocó"
+
+msgid "Ranas y anfibios únicos de la región"
+msgstr "Einzigartige Frösche und Amphibien der Region"
+
+msgid ""
+"Recibirás detalles sobre costos, disponibilidad y cómo confirmar tu reserva."
+msgstr ""
+"Sie erhalten Details zu Kosten, Verfügbarkeit und zur Bestätigung Ihrer "
+"Reservierung."
+
+msgid ""
+"Recomendamos: ropa cómoda de colores claros, manga larga para protección "
+"contra insectos, zapatos para agua, traje de baño, gorra o sombrero (NO "
+"protector solar ni repelente químico - contaminan el río), careta de "
+"snorkel, toalla, y una bolsa para tu basura."
+msgstr ""
+"Wir empfehlen: bequeme, helle Kleidung, langärmlige Kleidung als Schutz vor "
+"Insekten, Wasserschuhe, Badebekleidung, Mütze oder Hut (KEINE Sonnencreme "
+"und kein chemisches Insektenschutzmittel - sie verschmutzen den Fluss), "
+"Schnorchelmaske, Handtuch und eine Tüte für Ihren Müll."
+
+msgid "Reserva Natural - selva y cascadas"
+msgstr "Naturreservat - Regenwald und Wasserfälle"
+
+msgid ""
+"Reserva tu visita a San Cipriano. Formulario de contacto directo con la "
+"comunidad. Hospedaje, alimentación, tours y transporte en brujitas."
+msgstr ""
+"Reservieren Sie Ihren Besuch in San Cipriano. Direktes Kontaktformular zur "
+"Gemeinde. Unterkunft, Verpflegung, Touren und Transport in Brujitas."
+
+msgid ""
+"Reservando directamente con la comunidad pagas los precios oficiales, sin "
+"intermediarios, y cada peso apoya a las familias que cuidan la reserva."
+msgstr ""
+"Wenn Sie direkt bei der Gemeinde buchen, zahlen Sie die offiziellen Preise "
+"ohne Zwischenhändler, und jeder Peso unterstützt die Familien, die das "
+"Reservat pflegen."
+
+msgid "Reservar por WhatsApp"
+msgstr "Per WhatsApp reservieren"
+
+msgid "Ropa manga larga (protección contra insectos y sol)"
+msgstr "Langärmlige Kleidung (Schutz vor Insekten und Sonne)"
+
+msgid "Ruta desde Cali en bus"
+msgstr "Route ab Cali mit dem Bus"
+
+msgid "Ruta desde Cali en carro"
+msgstr "Route ab Cali mit dem Auto"
+
+msgid "Ruta desde Cali y Buenaventura en carro o bus, paso a paso."
+msgstr ""
+"Route ab Cali und Buenaventura mit Auto oder Bus, Schritt für Schritt."
+
+msgid ""
+"Río de agua cristalina en San Cipriano Valle del Cauca - naturaleza Colombia"
+msgstr ""
+"Fluss mit kristallklarem Wasser in San Cipriano Valle del Cauca - Natur "
+"Kolumbien"
+
+msgid ""
+"Río serpenteando en selva tropical del Pacífico colombiano - reserva natural"
+" San Cipriano"
+msgstr ""
+"Sich windender Fluss im tropischen Regenwald der kolumbianischen "
+"Pazifikküste - Naturreservat San Cipriano"
+
+msgid "Ríos Cristalinos, Cascadas y Naturaleza"
+msgstr "Kristallklare Flüsse, Wasserfälle und Natur"
+
+msgid ""
+"Ríos de agua cristalina, selva tropical y una comunidad que te recibe como "
+"en casa: estos son los planes que no te puedes perder."
+msgstr ""
+"Flüsse mit kristallklarem Wasser, tropischer Regenwald und eine Gemeinde, "
+"die Sie wie zu Hause empfängt: Das sind die Erlebnisse, die Sie nicht "
+"verpassen dürfen."
+
+msgid "Ríos, tubing, cascadas, aves, cocina del Pacífico y cultura."
+msgstr ""
+"Flüsse, Tubing, Wasserfälle, Vögel, Küche der Pazifikküste und Kultur."
+
+msgid "Saltar al contenido principal"
+msgstr "Zum Hauptinhalt springen"
+
+msgid ""
+"San Cipriano es una comunidad afrodescendiente con raíces profundas en la "
+"historia de Colombia. Nuestros ancestros llegaron a estas tierras como parte"
+" de los palenques, comunidades de africanos esclavizados que escaparon y "
+"formaron asentamientos libres en las selvas del Pacífico colombiano."
+msgstr ""
+"San Cipriano ist eine afrokolumbianische Gemeinde mit tiefen Wurzeln in der "
+"Geschichte Kolumbiens. Unsere Vorfahren kamen als Teil der Palenques in "
+"diese Gegend, Gemeinschaften geflohener versklavter Afrikaner, die freie "
+"Siedlungen in den Regenwäldern der kolumbianischen Pazifikküste gründeten."
+
+msgid ""
+"San Cipriano es una comunidad afrodescendiente heredera de los palenques. "
+"Conversa con su gente y conoce cómo cuidan la reserva."
+msgstr ""
+"San Cipriano ist eine afrokolumbianische Gemeinde, Erbin der Palenques. "
+"Sprechen Sie mit den Menschen dort und erfahren Sie, wie sie das Reservat "
+"schützen."
+
+msgid ""
+"San Cipriano es uno de los mejores planes de naturaleza cerca de Cali. Estos"
+" son los 8 planes que recomienda la comunidad para tu visita."
+msgstr ""
+"San Cipriano ist eines der besten Naturziele in der Nähe von Cali. Dies sind"
+" die 8 Erlebnisse, die die Gemeinde für Ihren Besuch empfiehlt."
+
+msgid ""
+"San Cipriano queda en el Pacífico colombiano, en el municipio de "
+"Buenaventura. No hay carretera hasta el pueblo: el último tramo se hace en "
+"brujita. Aquí tienes la ruta paso a paso."
+msgstr ""
+"San Cipriano liegt an der kolumbianischen Pazifikküste, in der Gemeinde "
+"Buenaventura. Bis zum Dorf führt keine Straße: Das letzte Stück legt man in "
+"der Brujita zurück. Hier finden Sie die Route Schritt für Schritt."
+
+msgid ""
+"San Cipriano: Reserva natural con ríos de agua cristalina, cascadas y las "
+"famosas brujitas. El mejor destino de ecoturismo en Colombia. Turismo "
+"comunitario en el Pacífico colombiano, cerca de Cali y Buenaventura."
+msgstr ""
+"San Cipriano: Naturreservat mit kristallklaren Flüssen, Wasserfällen und den"
+" berühmten Brujitas. Das beste Ökotourismusziel Kolumbiens. "
+"Gemeindetourismus an der kolumbianischen Pazifikküste, in der Nähe von Cali "
+"und Buenaventura."
+
+msgid "Seguro incluido"
+msgstr "Versicherung inklusive"
+
+msgid "Servicio"
+msgstr "Leistung"
+
+msgid "Servicios, Precios y Paquetes Turísticos"
+msgstr "Leistungen, Preise und Reisepakete"
+
+msgid ""
+"Si vas a dormir, llega antes de las 4pm para instalarte con luz de día."
+msgstr ""
+"Wenn Sie übernachten, kommen Sie vor 16 Uhr an, um sich bei Tageslicht "
+"einzurichten."
+
+msgid ""
+"Sigue siempre las indicaciones de los guías en el río y en los senderos."
+msgstr ""
+"Befolgen Sie im Fluss und auf den Wanderwegen stets die Anweisungen der "
+"Guides."
+
+msgid "Sin sorpresas al llegar"
+msgstr "Keine Überraschungen bei der Ankunft"
+
+msgid "Sobre las Reservas"
+msgstr "Über die Reservate"
+
+msgid ""
+"Sujétate bien y sigue las indicaciones del operador durante todo el "
+"trayecto."
+msgstr ""
+"Halten Sie sich gut fest und befolgen Sie während der gesamten Fahrt die "
+"Anweisungen des Fahrers."
+
+msgid ""
+"Sí, es apto para familias. Los niños deben estar siempre supervisados por un"
+" adulto y usar chaleco salvavidas en las actividades acuáticas."
+msgstr ""
+"Ja, es ist familiengeeignet. Kinder müssen stets von einem Erwachsenen "
+"beaufsichtigt werden und bei Wasseraktivitäten eine Schwimmweste tragen."
+
+msgid ""
+"Sí. Los operadores son de la comunidad, conocen bien la vía y el pasaje "
+"incluye un seguro. Solo debes sujetarte bien y seguir sus indicaciones."
+msgstr ""
+"Ja. Die Fahrer stammen aus der Gemeinde, kennen die Strecke gut, und der "
+"Fahrpreis beinhaltet eine Versicherung. Sie müssen sich nur gut festhalten "
+"und deren Anweisungen befolgen."
+
+msgid ""
+"Súbete a la brujita: en 15-20 minutos llegas a San Cipriano atravesando la "
+"selva. La entrada a la reserva cuesta $10.000 por persona."
+msgstr ""
+"Steigen Sie in die Brujita: In 15–20 Minuten erreichen Sie San Cipriano "
+"mitten durch den Regenwald. Der Eintritt ins Reservat kostet $10.000 pro "
+"Person."
+
+msgid "Tarifa especial web"
+msgstr "Sondertarif online"
+
+msgid "Te contactaremos por WhatsApp o correo con información personalizada."
+msgstr ""
+"Wir kontaktieren Sie per WhatsApp oder E-Mail mit persönlichen "
+"Informationen."
+
+msgid "Todo sobre las brujitas"
+msgstr "Alles über die Brujitas"
+
+msgid ""
+"Todo sobre las brujitas de San Cipriano: el transporte sobre rieles "
+"impulsado por moto que cruza la selva en 15-20 minutos. Precio $24.000 ida y"
+" vuelta con seguro, horario 6am-6pm y consejos."
+msgstr ""
+"Alles über die Brujitas von San Cipriano: das motorradbetriebene "
+"Schienenfahrzeug, das den Regenwald in 15–20 Minuten durchquert. Preis "
+"$24.000 hin und zurück mit Versicherung, Fahrzeiten 6–18 Uhr und Tipps."
+
+msgid ""
+"Toma la vía Cali–Buenaventura. El recorrido hasta Córdoba toma unas 2,5 "
+"horas, según el tráfico."
+msgstr ""
+"Nehmen Sie die Straße Cali–Buenaventura. Die Fahrt bis Córdoba dauert je "
+"nach Verkehr etwa 2,5 Stunden."
+
+msgid ""
+"Toma la vía hacia Cali hasta el desvío del corregimiento de Córdoba y sigue "
+"hasta la estación de las brujitas. Es el trayecto más corto si ya estás en "
+"el puerto."
+msgstr ""
+"Nehmen Sie die Straße Richtung Cali bis zur Abzweigung zum Dorf Córdoba und "
+"fahren Sie weiter bis zur Brujita-Station. Das ist die kürzeste Strecke, "
+"wenn Sie bereits im Hafen sind."
+
+msgid "Tour guiado (flotadores, chalecos, cascadas y pozos)"
+msgstr ""
+"Geführte Tour (Schwimmreifen, Schwimmwesten, Wasserfälle und Badebecken)"
+
+msgid "Transporte tradicional sobre rieles"
+msgstr "Traditionelles Schienenfahrzeug"
+
+msgid "Tu navegador no soporta el elemento de video."
+msgstr "Ihr Browser unterstützt das Video-Element nicht."
+
+msgid "Turismo Comunitario - comunidad local"
+msgstr "Gemeindetourismus - lokale Gemeinde"
+
+msgid "Un miembro de la comunidad revisará tu solicitud."
+msgstr "Ein Mitglied der Gemeinde wird Ihre Anfrage prüfen."
+
+msgid ""
+"Unas 2,5 horas por carretera desde Cali hasta Córdoba, más 15-20 minutos en "
+"brujita hasta San Cipriano. En total, cuenta con unas 3 horas de viaje."
+msgstr ""
+"Etwa 2,5 Stunden Fahrt von Cali bis Córdoba, dazu 15–20 Minuten in der "
+"Brujita bis San Cipriano. Insgesamt sollten Sie mit etwa 3 Stunden Reisezeit"
+" rechnen."
+
+msgid "Ver la guía completa para llegar"
+msgstr "Den vollständigen Anreiseführer ansehen"
+
+msgid "Ver los 8 planes imperdibles"
+msgstr "Die 8 unverzichtbaren Erlebnisse ansehen"
+
+msgid "Ver todos los precios"
+msgstr "Alle Preise ansehen"
+
+msgid "Viaja con poco equipaje: el espacio en la brujita es reducido."
+msgstr "Reisen Sie mit wenig Gepäck: Der Platz in der Brujita ist begrenzt."
+
+msgid "Viajar en brujita"
+msgstr "In der Brujita fahren"
+
+msgid "Visitante"
+msgstr "Besucher"
+
+msgid "Visitantes"
+msgstr "Besucher"
+
+msgid "Volver al Inicio"
+msgstr "Zurück zum Anfang"
+
+msgid "cómo llegar a San Cipriano"
+msgstr "Anreise nach San Cipriano"
+
+msgid "desde"
+msgstr "ab"
+
+msgid "o revisa"
+msgstr "oder sehen Sie"
+
+msgid "por persona"
+msgstr "pro Person"
+
+msgid "precios de San Cipriano 2026"
+msgstr "Preise von San Cipriano 2026"
+
+msgid "ruta paso a paso desde Cali"
+msgstr "Route Schritt für Schritt ab Cali"
+
+msgid "tu@correo.com"
+msgstr "ihre@email.com"
+
+msgid "¡Gracias!"
+msgstr "Vielen Dank!"
+
+msgid "¡Reserva con anticipación y ahorra!"
+msgstr "Reservieren Sie früh und sparen Sie!"
+
+msgid "¿A qué hora funcionan las brujitas?"
+msgstr "Wann fahren die Brujitas?"
+
+msgid "¿Cuánto cuesta dormir en San Cipriano?"
+msgstr "Was kostet eine Übernachtung in San Cipriano?"
+
+msgid ""
+"¿Cuánto cuesta ir a San Cipriano en 2026? Entrada $10.000, brujita $24.000 "
+"ida y vuelta con seguro y hospedaje con 3 comidas desde $140.000 por "
+"persona. Presupuesto para pasadía y fin de semana."
+msgstr ""
+"Was kostet ein Besuch in San Cipriano 2026? Eintritt $10.000, Brujita "
+"$24.000 hin und zurück mit Versicherung und Unterkunft mit 3 Mahlzeiten ab "
+"$140.000 pro Person. Budget für Tagesausflug und Wochenende."
+
+msgid "¿Cuánto cuesta la brujita en San Cipriano?"
+msgstr "Was kostet die Brujita in San Cipriano?"
+
+msgid "¿Cuánto cuesta la entrada a San Cipriano?"
+msgstr "Was kostet der Eintritt nach San Cipriano?"
+
+msgid "¿Cuánto cuesta un pasadía en San Cipriano?"
+msgstr "Was kostet ein Tagesausflug nach San Cipriano?"
+
+msgid "¿Cuánto dura el viaje en brujita?"
+msgstr "Wie lange dauert die Fahrt in der Brujita?"
+
+msgid "¿Cuánto tiempo se demora de Cali a San Cipriano?"
+msgstr "Wie lange braucht man von Cali nach San Cipriano?"
+
+msgid "¿Cómo llegas a la estación de brujitas? Mira la"
+msgstr "Wie kommen Sie zur Brujita-Station? Sehen Sie die"
+
+msgid "¿Es seguro montar en brujita?"
+msgstr "Ist die Fahrt in der Brujita sicher?"
+
+msgid "¿Listo para visitar San Cipriano?"
+msgstr "Bereit für Ihren Besuch in San Cipriano?"
+
+msgid "¿Pasadía o quedarse a dormir?"
+msgstr "Tagesausflug oder übernachten?"
+
+msgid "¿Prefieres que te contactemos?"
+msgstr "Möchten Sie lieber, dass wir Sie kontaktieren?"
+
+msgid "¿Qué se puede hacer en San Cipriano?"
+msgstr "Was kann man in San Cipriano unternehmen?"
+
+msgid "¿Qué sigue?"
+msgstr "Wie geht es weiter?"
+
+msgid "¿Qué son las brujitas?"
+msgstr "Was sind die Brujitas?"
+
+msgid "¿San Cipriano es un buen plan para niños?"
+msgstr "Ist San Cipriano ein gutes Ziel für Kinder?"
+
+msgid "¿Se necesita guía en San Cipriano?"
+msgstr "Braucht man in San Cipriano einen Guide?"
+
+msgid "¿Se puede llegar en carro hasta San Cipriano?"
+msgstr "Kann man mit dem Auto bis San Cipriano fahren?"
+
+msgid "¿Ya sabes cómo llegar? Revisa cuánto cuesta tu viaje:"
+msgstr "Wissen Sie schon, wie Sie anreisen? Sehen Sie, was Ihre Reise kostet:"

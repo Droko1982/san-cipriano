@@ -31,7 +31,7 @@ Ofrecemos turismo responsable gestionado directamente por la comunidad local afr
 
 Cada visita apoya directamente a las familias de San Cipriano. Reserva con anticipación en nuestra web.
 
-📍 A 1.5 horas de Cali | 45 min de Buenaventura
+📍 A 2,5 horas de Cali | 45 min de Buenaventura
 ```
 
 ### Atributos para marcar
@@ -72,7 +72,7 @@ Descubre el paraíso escondido del Pacífico colombiano, donde los ríos son tan
 
 🏠 Turismo Comunitario - Tu visita apoya directamente a las familias locales
 
-📍 A solo 1.5 horas de Cali
+📍 A solo 2,5 horas de Cali
 
 ¿Listo para vivir la experiencia?
 👉 Link en bio para reservar
@@ -86,7 +86,7 @@ Descubre el paraíso escondido del Pacífico colombiano, donde los ríos son tan
 
 ¿Sabías que San Cipriano tiene el transporte más único del mundo?
 
-Las "brujitas" son pequeños carros sobre rieles de tren, impulsados por motocicletas. Durante 30 minutos atraviesas la selva tropical en esta aventura inolvidable.
+Las "brujitas" son pequeños carros sobre rieles de tren, impulsados por motocicletas. Durante 15-20 minutos atraviesas la selva tropical en esta aventura inolvidable.
 
 💡 Dato curioso: Se llaman "brujitas" porque en la noche, las luces de las motos parecen volar entre la selva como pequeñas brujas.
 
@@ -136,12 +136,12 @@ Los ríos de San Cipriano son famosos por su transparencia. El agua es tan pura 
 ```
 🌿 BIENVENIDOS A SAN CIPRIANO 🌿
 
-San Cipriano es una reserva natural ubicada en el corazón del Pacífico colombiano, a solo 1.5 horas de Cali. Somos una comunidad afrodescendiente que ha convertido el turismo responsable en una forma de vida y conservación.
+San Cipriano es una reserva natural ubicada en el corazón del Pacífico colombiano, a solo 2,5 horas de Cali. Somos una comunidad afrodescendiente que ha convertido el turismo responsable en una forma de vida y conservación.
 
 ¿QUÉ NOS HACE ÚNICOS?
 
 🚃 LAS BRUJITAS
-El único transporte del mundo donde viajas sobre rieles de tren impulsado por una motocicleta. 30 minutos de pura adrenalina atravesando la selva.
+El único transporte del mundo donde viajas sobre rieles de tren impulsado por una motocicleta. 15-20 minutos de pura adrenalina atravesando la selva.
 
 🌊 RÍOS CRISTALINOS
 Aguas tan transparentes que puedes ver cada piedra del fondo. Charcos naturales, cascadas y la oportunidad de desconectarte del mundo.
@@ -205,7 +205,7 @@ San Cipriano estrena página web oficial para que planifiques tu visita de forma
 🌊 Ríos cristalinos
 🏠 Hospedaje comunitario
 
-📍 A 1.5h de Cali
+📍 A 2,5h de Cali
 
 Reserva aquí 👇
 https://sanciprianoreserva.com
@@ -230,7 +230,7 @@ WhatsApp: +57 316 059 2569
 (Incluye brujita ida y vuelta)
 
 📍 *¿Cómo llegar?*
-- Desde Cali: 1.5 horas
+- Desde Cali: 2,5 horas
 - Desde Buenaventura: 45 minutos
 
 *¿Por qué San Cipriano?*
@@ -251,7 +251,7 @@ WhatsApp: +57 316 059 2569
 ```
 🌊 ¿Ya conoces San Cipriano?
 Ríos cristalinos + Brujitas + Naturaleza
-A 1.5h de Cali 📍
+A 2,5h de Cali 📍
 👉 sanciprianoreserva.com
 ```
 
@@ -308,7 +308,7 @@ Más info: https://sanciprianoreserva.com/visitantes/servicios/
 1. Toma la vía Cali-Buenaventura
 2. En el km 100 (Córdoba), desvío a la izquierda
 3. Llegas al parqueadero donde tomas la brujita
-4. Tiempo total: ~1.5 horas
+4. Tiempo: ~2,5 horas por carretera + 15-20 min en brujita
 
 *Desde Buenaventura:*
 1. Toma la vía hacia Cali

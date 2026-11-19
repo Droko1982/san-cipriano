@@ -485,7 +485,7 @@
     <!-- Footer -->
     <footer class="bg-selva-900 text-white mt-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- About -->
                 <div>
                     <div class="flex items-center gap-2 mb-4">
@@ -506,6 +506,17 @@
                         <li><a href="{% url 'core:safety' %}" class="hover:text-white transition-colors">{% trans "Seguridad y Normas" %}</a></li>
                         <li><a href="{% url 'content:biodiversity' %}" class="hover:text-white transition-colors">{% trans "Biodiversidad" %}</a></li>
                         <li><a href="{% url 'content:faq' %}" class="hover:text-white transition-colors">{% trans "Preguntas Frecuentes" %}</a></li>
+                    </ul>
+                </div>
+
+                <!-- Travel guides -->
+                <div>
+                    <h3 class="font-semibold mb-4">{% trans "Guías de viaje" %}</h3>
+                    <ul class="space-y-2 text-selva-300">
+                        <li><a href="{% url 'guides:how_to_get' %}" class="hover:text-white transition-colors">{% trans "Cómo llegar a San Cipriano" %}</a></li>
+                        <li><a href="{% url 'guides:prices' %}" class="hover:text-white transition-colors">{% trans "Precios 2026" %}</a></li>
+                        <li><a href="{% url 'guides:brujitas' %}" class="hover:text-white transition-colors">{% trans "Las brujitas de San Cipriano" %}</a></li>
+                        <li><a href="{% url 'guides:things_to_do' %}" class="hover:text-white transition-colors">{% trans "Qué hacer en San Cipriano" %}</a></li>
                     </ul>
                 </div>
 
