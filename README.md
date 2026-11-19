@@ -163,7 +163,6 @@ Propiedad de la Comunidad de San Cipriano, Colombia.
 ## Contacto
 
 - 📱 WhatsApp: +57 316 059 2569
-- 📧 Email: 
 
 ---
 

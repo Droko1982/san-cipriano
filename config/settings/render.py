@@ -169,7 +169,8 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 # Site settings
 SITE_NAME = "San Cipriano"
 SITE_TAGLINE = "Reserva Natural Comunitaria"
-COMMUNITY_EMAIL = ""
+# Correo PRIVADO que recibe las consultas: variable COMMUNITY_EMAIL en Render (no se muestra en el sitio)
+COMMUNITY_EMAIL = os.environ.get("COMMUNITY_EMAIL", "")
 COMMUNITY_WHATSAPP = "+573160592569"
 VISITOR_COUNTER_INITIAL = 45
 

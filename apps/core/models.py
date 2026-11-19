@@ -44,6 +44,7 @@ class SiteConfiguration(models.Model):
     )
     community_email = models.EmailField(
         _("correo de la comunidad"),
+        blank=True,
         default=""
     )
     visitor_counter_base = models.PositiveIntegerField(

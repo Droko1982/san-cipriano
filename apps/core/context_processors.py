@@ -76,7 +76,6 @@ def site_settings(request):
         "site_tagline": getattr(config, "tagline", None) or getattr(settings, "SITE_TAGLINE", "Reserva Natural Comunitaria"),
         "community_whatsapp": community_whatsapp,
         "whatsapp_quote_url": whatsapp_quote_url,
-        "community_email": getattr(config, "community_email", None) or getattr(settings, "COMMUNITY_EMAIL", ""),
         "available_languages": getattr(settings, "LANGUAGES", [("es", "Español")]),
         "languages_with_urls": languages_with_urls,
         "visitor_count": visitor_count,

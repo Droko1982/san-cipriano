@@ -24,7 +24,7 @@
 <!-- Contact Methods -->
 <section class="py-16 px-4">
     <div class="max-w-4xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 gap-8">
             <!-- WhatsApp -->
             <a href="https://wa.me/{{ community_whatsapp|slice:'1:' }}" target="_blank"
                class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-lg transition-shadow group">
@@ -44,24 +44,6 @@
                 </p>
             </a>
 
-            <!-- Email -->
-            <a href="mailto:{{ community_email }}"
-               class="bg-white rounded-2xl shadow-md p-8 border border-gray-100 hover:shadow-lg transition-shadow group">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-16 h-16 bg-rio-100 rounded-xl flex items-center justify-center group-hover:bg-rio-200 transition-colors">
-                        <svg class="w-8 h-8 text-rio-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                        </svg>
-                    </div>
-                    <div>
-                        <h2 class="font-display text-xl font-bold text-gray-900">{% trans "Correo Electrónico" %}</h2>
-                        <p class="text-rio-600 font-medium">{{ community_email }}</p>
-                    </div>
-                </div>
-                <p class="text-gray-600">
-                    {% trans "Para consultas detalladas o información que prefieras por escrito." %}
-                </p>
-            </a>
         </div>
 
         <!-- Form CTA -->

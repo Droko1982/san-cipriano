@@ -146,6 +146,8 @@ class EmailService:
         """
         Send email notification about new visitor inquiry.
         """
+        if not settings.COMMUNITY_EMAIL:
+            return False
         subject = f"Nueva consulta de {inquiry.full_name}"
 
         # Create notification log
